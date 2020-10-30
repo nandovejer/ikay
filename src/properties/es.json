@@ -1,0 +1,220 @@
+{
+  "header": {
+    "h1": "Tu navegador dice...",
+    "description": "Este es un panel sobre todos los datos que tu navegador conoce de ti.",
+    "location": "Geolocalización",
+    "info": "Información General",
+    "software": "Software",
+    "hardware": "Hardware",
+    "connection": "Conexión",
+    "battery": "Batería",
+    "aboutme": "Sobre Mi",
+    "share": "Compartir"
+  },
+  "main": {
+    "intro": {
+      "heading": "Tu huella Digital",
+      "content1": "<p>Hola, soy <a href='https://soynando.com'>Nando Muñoz</a>, bienvenido a “Tu navegador dice que...”, una web con el único fin de concienciar sobre tu privacidad en internet.</p>",
+      "content2": "<p>La información que aparece acontinuación, son datos mostrados por tu navegador sin que te des cuenta y sin haber decido tú, los <a href='https://hipertextual.com/2018/11/permisos-sitios-web-navegador'>permisos del navegador.</a>. No son 100% precisos, pero contrastados con otro tipo de datos son capaces de establecer tu <a href='https://maldita.es/malditatecnologia/2020/03/20/fingerprinting-o-como-se-crea-tu-huella-digital'>huella digital (fingerprintig)</a>.</p>",
+      "content3": "<p>A continuación, te mostré un panel con parte de la información que cedes a una web, cada vez que entras a ella. Si quieres saber más,pásate a leer <a href='#'>mi artículo sobre el tema</a> (Sólo en español 🙁)</p>"
+    },
+    "cardmore": "Saber más sobre este dato",
+    "noSupport": "Su navegador no admite esta funcionalidad. Bueno para tu privacidad, puede ser: D"
+  },
+
+  "aboutme": {
+    "heading": "Sobre Mi",
+    "content1": "<p>Hola, soy Nando Muñoz, senior Frontend Developer enfocado en el área @CommerceCloud | #ecommerce | #CSS lover y miembro ejecutivo de la iniciativa solidaria @HelpDev_</p>",
+    "content2": "<p class=''>Puedes contactar conmigo a través de <a href='#'>Github</a>,<a href='#'>Twitter</a> o <a href='#'>Linkedin</a></p>",
+    "content3": ""
+  },
+
+  "footer": {
+    "title": "Estado de tus datos",
+    "content1": "<p>Todos los datos que aparecen en esta web permanecen almacenados solamente en tu dispositivo, en ningún momento son envidos a ningún servidor externo, ¿por qué? porque no me interesan tus datos, me interesa tu concienciación.</p>",
+    "content2": "<p>No obstante, desconozco si GitHub (el servidor donde se aloja esta web) o ipapi.co (API externa que utilizo para determinar tu ciudad, país y compañía de telefonía a partir de tu IP) generan algún tipo almacenamiento de dato similar o ajeno al mostrado en esta web. Pero bueno, si no te preocupa compartir en facebook cada cena, momento, recuerdo o sentimiento, tampoco te preocupará la información (similar a esta) que almacenará sobre ti esa web maravillosa donde te han dicho que ves peliculas online de pagp, pero gratis:D Pérmiteme un poco de ironía :)</p>",
+    "thanks": "<p>Quiero dar las gracias a <a href='https://github.com/RobinLinus'>Robin Linus</a> por su inspirtación y a <a href='https://www.flaticon. com'>Flaicons</a> por aportar sus iconos</p>",
+    "license": "<p><a href='https://opensource.org/licenses/MIT'>MIT License:</a>Basically, you can do whatever you want with software licensed under the MIT license - only if you add a copy of the original MIT license and copyright notice to it.</p>"
+  },
+
+  "global": {
+    "spanish": "español",
+    "english": "inglés",
+    "arabic": "árabe",
+    "contact": "Contacto",
+    "shareSocialMedia": "Compartir en RRSS",
+    "share": "Compartir",
+    "shareIn": "Comparte en {0}"
+  },
+  "thanks": {
+    "title": "Créditos",
+    "description": "Inspiración:<a href='https://github.com/RobinLinus'>Robin Linus</a> | Iconos: <a href='https://www.flaticon.com'>Flaicons</a>"
+  },
+  "licence": "<a href='https://opensource.org/licenses/MIT'>MIT Licencia</a>,básicamente, puede hacer lo que quiera con el software licenciado bajo la licencia MIT - sólo si agrega una copia de la licencia original del MIT y aviso de derechos de autor a la misma",
+  "aboutproject": {
+    "title": "Sobre el proyecto",
+    "description": "descripcion del projecto lorem impsum ariatur mollitia soluta dignissimos, nulla suscipit? Expedita sint ex ducimus, qui deleniti cor"
+  },
+  "location": {
+    "title": "Localización",
+    "modalinfo": {
+      "title": "Localización",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "device": {
+    "title": "Dispositivo",
+    "type": {
+      "mobileAndroid": "Movil Android",
+      "tabletAndroid": "Tablet Android",
+      "ipad": "Ipad",
+      "iphone": "Iphone",
+      "laptopWin": "Portatil Windows",
+      "laptopMac": "Macbook Pro o Macbook Air probablemente",
+      "tv": "Una Tele",
+      "unknownDevice": "Dispositivo desconocido"
+    },
+    "modalinfo": {
+      "title": "device",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "screen": {
+    "title": "Resolución",
+    "modalinfo": {
+      "title": "La Resolución",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "orientation": {
+    "title": "Orientación",
+    "type": {
+      "portrait": "vertical",
+      "landscape": "horizontal",
+      "undefined": "Como estas usando un {0}, no se definirlo"
+    },
+    "modalinfo": {
+      "title": "La Orientación",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "darkmode": {
+    "title": "Modo Oscuro",
+    "type": {
+      "enable": "Modo Oscuro activado",
+      "disable": "Modo Claro activado"
+    },
+    "modalinfo": {
+      "title": "El Modo Oscuro",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "lang": {
+    "title": "Lenguaje",
+    "modalinfo": {
+      "title": "El Lenguaje",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "exit": {
+    "title": "Dejaste la página",
+    "firsttime": "Es tu primera vez en esta página",
+    "severaltimes": "Visitaste la página:",
+    "modalinfo": {
+      "title": "Dejaste la página",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "os": {
+    "title": "Sistema Operativo",
+    "modalinfo": {
+      "title": "El Sistema Operativo",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "browser": {
+    "title": "Navegador",
+    "modalinfo": {
+      "title": "El Navegador",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "connection": {
+    "title": "Velocidad de Descargaaa",
+    "type": {
+      "lower2g": "Muy Lenta (2G)",
+      "low2g": "Lenta (2G)",
+      "normal3g": "Normal (3G | WIFI)",
+      "faster4g": "Rápida/Muy Rápida (4G | 5G | WIFI)"
+    },
+    "modalinfo": {
+      "title": "Velocidad de descarga",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "telco": {
+    "title": "Compañia de Telefonía",
+    "modalinfo": {
+      "title": "Compañia de Telefonía",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "ip": {
+    "title": "IP",
+    "modalinfo": {
+      "title": "IP",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "ram": {
+    "title": "Memoria RAM",
+    "modalinfo": {
+      "title": "Memoria RAM",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "cpu": {
+    "title": "La CPU",
+    "modalinfo": {
+      "title": "La CPU",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "gpu": {
+    "title": "La GPU",
+    "modalinfo": {
+      "title": "La GPU",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  },
+  "battery": {
+    "title": "Battería",
+    "type": {
+      "mode": "Modo",
+      "level": "Nivel",
+      "charged": "Cargado",
+      "remaining": "Tiempo restante",
+      "charging": "Cargando..."
+    },
+    "modalinfo": {
+      "title": "La Battería",
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
+      "moreinfo": "<a href='#'>Sobre...</a>"
+    }
+  }
+}

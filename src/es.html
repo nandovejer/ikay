@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tu navegador dice...</title>
+  </head>
+
+  <body class="loadingEnable">
+    <header class="header">
+      <a class="header__linkHome" href="#">
+        <span class="header__logo iconbg iconbg-logo"></span>
+        <div class="header__info">
+          <h1 class="header__h1">Tu navegador dice...</h1>
+          <p class="header__description">
+            Este es un panel sobre todos los datos que tu navegador conoce de
+            ti.
+          </p>
+        </div>
+      </a>
+      <button class="header__btnMenu js-bntMenu" data-label="Menu">
+        <span class="iconbg iconbg-menu"></span>
+      </button>
+
+      <nav class="nav js-navMenu">
+        <button class="nav__btnMenuClose js-bntMenuClose">
+          <span class="iconbg iconbg-close"></span>
+        </button>
+
+        <aside class="nav__lang">
+          <button id="" class="nav__lang__btn js-lang-es" data-name="Epañol">
+            ES
+          </button>
+          <button id="" class="nav__lang__btn js-lang-en" data-name="English">
+            EN
+          </button>
+          <button id="" class="nav__lang__btn js-lang-ar" data-name="العربية">
+            AR
+          </button>
+        </aside>
+        <ul class="nav__list">
+          <li class="nav__list__item">
+            <a href="#areaLocation" class="link js-navMenu-link">
+              <span class="nav__icon iconbg iconbg-location"></span>
+              <span class="text">Localización</span>
+            </a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#areaInfo" class="link js-navMenu-link">
+              <span class="nav__icon iconbg iconbg-info"></span>
+              <span class="text">Información</span>
+            </a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#areaSoftware" class="link js-navMenu-link">
+              <span class="nav__icon iconbg iconbg-os"></span>
+              <span class="text">Software</span>
+            </a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#areaHardware" class="link js-navMenu-link">
+              <span class="nav__icon iconbg iconbg-hardware"></span>
+              <span class="text">Hardware</span>
+            </a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#areaConnection" class="link js-navMenu-link">
+              <span class="nav__icon iconbg iconbg-connection"></span>
+              <span class="text">Connexión</span>
+            </a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#areaBattery" class="link js-navMenu-link">
+              <span class="nav__icon iconbg iconbg-battery"></span>
+              <span class="text">Batería</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav__list">
+          <li class="nav__list__item">
+            <a href="#areaAbout" class="link js-navMenu-link">
+              <span class="nav__icon iconbg iconbg-project"></span>
+              <span class="text">Sobre Mi</span>
+            </a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#" class="link js-share-native">
+              <span class="nav__icon iconbg iconbg-share"></span>
+              <span class="text">Compartir</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="loading js-loading"></div>
+
+      <section class="area area--full">
+        <article class="area__article">
+          <h2 class="article__title">Huella Digital</h2>
+          <p>
+            Hola, soy <a href="soynando.com">Nando Muñoz</a>, bienvenido a “Tu
+            navegador dice que...”, una web con el único fin de concienciar
+            sobre tu privacidad en internet.
+          </p>
+          <p>
+            La información que aparece acontinuación, son datos mostrados por tu
+            navegador sin que te des cuenta y sin haber decido tú, los
+            <a
+              href="https://hipertextual.com/2018/11/permisos-sitios-web-navegador"
+              >permisos del navegador.</a
+            >. No son 100% precisos, pero contrastados con otro tipo de datos
+            son capaces de establecer tu
+            <a
+              href="https://maldita.es/malditatecnologia/2020/03/20/fingerprinting-o-como-se-crea-tu-huella-digital"
+              >huella digital (fingerprintig)</a
+            >.
+          </p>
+          <p>
+            A continuación, te mostré un panel con parte de la información que
+            cedes a una web, cada vez que entras a ella. Si quieres saber más,
+            pásate a leer <a href="#">mi artículo sobre el tema</a> (Sólo en
+            español 🙁 )
+          </p>
+        </article>
+      </section>
+
+      <section class="area area--location">
+        <h3 id="areaLocation" class="area__title">Localización</h3>
+
+        <!-- CARD -->
+        <article
+          class="js-card js-card-location card card--vertical card--location"
+        >
+          <div class="card__map js-card-map"></div>
+          <button class="card__more js-card-more"></button>
+          <div class="card__info">
+            <span class="card__info__type js-apiValue-country">...</span>
+            <h3 class="card__info__title js-apiValue-city">...</h3>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Localización</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="area area--info">
+        <h3 id="areaInfo" class="area__title">Información</h3>
+        <!-- CARD -->
+        <article class="js-card js-card-device card card--device">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon"></span>
+          <div class="card__info">
+            <span class="card__info__type">Dispositivo</span>
+            <h3 class="card__info__title js-apiValue-device">...</h3>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Dispositivo</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+          <div id="modalCardDevice"></div>
+        </article>
+        <!-- CARD -->
+        <article class="js-card js-card-screen card card--screen">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon icon iconbg-resolution"></span>
+          <div class="card__info">
+            <span class="card__info__type">Resolución</span>
+            <h3 class="card__info__title js-apiValue-screen">...</h3>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Resolución</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+        <!-- CARD -->
+        <article class="js-card js-card-orientation card card--orientation">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon icon iconbg-orientation"></span>
+          <div class="card__info">
+            <span class="card__info__type">Orientación</span>
+            <h3 class="card__info__title js-apiValue-orientation">...</h3>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Orientación</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+        <!-- CARD -->
+        <article class="js-card js-card-darkmode card card--darkmode">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon icon iconbg-darkmode"></span>
+          <div class="card__info">
+            <span class="card__info__type">Modo Oscuro</span>
+            <h3 class="card__info__title js-apiValue-darkmode">...</h3>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Modo Oscuro</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+        <!-- CARD -->
+        <article class="js-card js-card-lang card card--lang">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon icon iconbg-lang"></span>
+          <div class="card__info">
+            <span class="card__info__type">Idioma</span>
+            <h3 class="card__info__title js-apiValue-lang">...</h3>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Idioma</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+        <!-- CARD -->
+        <article class="js-card js-card-exit card card--exit">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon icon iconbg-exit"></span>
+          <div class="card__info">
+            <span class="card__info__type js-apiValue-exitTitle">...</span>
+            <ul class="card__info__list js-apiValue-exit"></ul>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Visitas</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="area area--software">
+        <h3 id="areaSoftware" class="area__title">Software</h3>
+        <!-- CARD -->
+        <article class="js-card js-card-os card card--os">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon"></span>
+          <div class="card__info">
+            <span class="card__info__type">Sistema Operativo</span>
+            <h3 class="card__info__title js-apiValue-os">...</h3>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Sistema Operativo</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+        <!-- CARD -->
+        <article class="js-card js-card-browser card card--browser">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon"></span>
+          <div class="card__info">
+            <span class="card__info__type">Navegador</span>
+            <h3 class="card__info__title js-apiValue-browser">...</h3>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Navegador</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="area area--connection">
+        <h3 id="areaConnection" class="area__title">Conexión</h3>
+        <!-- CARD -->
+        <article
+          class="js-card js-card-connection card card--vertical card--connection"
+        >
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon icon iconbg-connection"></span>
+          <div class="card__info">
+            <span class="card__info__type">Velocidad de descarga</span>
+            <h3 class="card__info__title js-apiValue-connection-mbps">...</h3>
+            <p class="card__info__description js-apiValue-connection-type">
+              ...
+            </p>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Conexión</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="js-card js-card-telco card card--telco">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon icon iconbg-telco"></span>
+          <div class="card__info">
+            <span class="card__info__type">Compañia de Telefonía</span>
+            <h3 class="card__info__title js-apiValue-telco">...</h3>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Compañia de Telefonía</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="js-card js-card-ip card card--ip">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon icon iconbg-ip"></span>
+          <div class="card__info">
+            <span class="card__info__type">IP</span>
+            <h3 class="card__info__title js-apiValue-ip">...</h3>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">IP</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="area area--hardware">
+        <h3 id="areaHardware" class="area__title">Hardware</h3>
+        <!-- CARD -->
+        <article class="js-card js-card-ram card card--ram">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon icon iconbg-ram"></span>
+          <div class="card__info">
+            <span class="card__info__type">Memoria RAM</span>
+            <h3 class="card__info__title js-apiValue-ram">...</h3>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Memoria RAM</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+        <!-- CARD -->
+        <article class="js-card js-card-cpu card card--cpu">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon icon iconbg-cpu"></span>
+          <div class="card__info">
+            <span class="card__info__type">CPU</span>
+            <h3 class="card__info__title js-apiValue-cpu">...</h3>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">CPU</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+        <!-- CARD -->
+        <article class="js-card js-card-gpu card card--gpu">
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon icon iconbg-gpu"></span>
+          <div class="card__info">
+            <span class="card__info__type">GPU</span>
+            <h3 class="card__info__title js-apiValue-gpu">...</h3>
+          </div>
+          <canvas id="glcanvas" width="1" height="1"></canvas>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">GPU</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="area area--foo">
+        <h3 id="areaBattery" class="area__title">Batería</h3>
+        <!-- CARD -->
+        <article
+          class="js-card js-card-battery card card--vertical card--battery"
+        >
+          <button class="card__more js-card-more"></button>
+          <span class="card__icon icon iconbg-battery"></span>
+          <div class="card__info">
+            <span class="card__info__type">Batería</span>
+            <!-- WIDGET BATTERY -->
+            <div class="battery">
+              <div class="battery__icon" data-level="0%"></div>
+              <aside class="battery__info">
+                <ul class="battery__info__list">
+                  <li class="battery__info__item">
+                    <span class="battery__info__title">Modo</span>
+                    <span
+                      class="battery__info__value battery__info__value--mode js-battery-mode"
+                      >-</span
+                    >
+                  </li>
+                  <li class="battery__info__item">
+                    <span class="battery__info__title">Nivel</span>
+                    <span class="battery__info__value js-battery-level">-</span>
+                  </li>
+
+                  <li class="battery__info__item">
+                    <span class="battery__info__title">Cargado</span>
+                    <span class="battery__info__value js-battery-chargedtimme"
+                      >-</span
+                    >
+                  </li>
+
+                  <li class="battery__info__item">
+                    <span class="battery__info__title">Pendiente</span>
+                    <span
+                      class="battery__info__value js-battery-dischargingtime"
+                      >-</span
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+          <div class="card__noSupport">
+            <span class="card__noSupport__type">Batería</span>
+            <p class="card__noSupport__description">
+              Su navegador no admite esta funcionalidad. Bueno para tu
+              privacidad, puede ser: D
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="area area--full area--typeinfo">
+        <article class="area__article">
+          <h2 id="areaAbout" class="aboutme__title">Sobre mi</h2>
+          <p>
+            Hola, soy Nando Muñoz, senior Frontend Developer enfocado en el área
+            @CommerceCloud | #ecommerce | #CSS lover y miembro ejecutivo de la
+            iniciativa solidaria @HelpDev_
+          </p>
+          <p class="">
+            Puedes contactar conmigo a través de <a href="#">Github</a>,
+            <a href="#">Twitter</a> o <a href="#">Linkedin</a>
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <article class="footer__article">
+        <h3>Uso de tus datos</h3>
+        <p>
+          Todos los datos que aparecen en esta web permanecen almacenados
+          solamente en tu dispositivo, en ningún momento son envidos a ningún
+          servidor externo, ¿por qué? porque no me interesan tus datos, me
+          interesa tu concienciación.
+        </p>
+        <p>
+          No obstante, desconozco si GitHub (el servidor donde se aloja esta
+          web) o ipapi.co (API externa que utilizo para determinar tu ciudad,
+          país y compañía de telefonía a partir de tu IP) generan algún tipo
+          almacenamiento de dato similar o ajeno al mostrado en esta web. Pero
+          bueno, si no te preocupa compartir en facebook cada cena, momento,
+          recuerdo o sentimiento, tampoco te preocupará la información (similar
+          a esta) que almacenará sobre ti esa web maravillosa donde te han dicho
+          que ves peliculas online de pagp, pero gratis :D Pérmiteme un poco de
+          ironía :)
+        </p>
+      </article>
+
+      <article class="footer__article footer__article--legal">
+        <p>
+          Quiero dar las gracias a
+          <a href=" https://github.com/RobinLinus">Robin Linus</a> por su
+          inspirtación y a <a href="https://www.flaticon.com">Flaicons</a> por
+          aportar sus iconos
+        </p>
+        <p>
+          <a href="https://opensource.org/licenses/MIT">MIT License:</a>
+          Basically, you can do whatever you want with software licensed under
+          the MIT license - only if you add a copy of the original MIT license
+          and copyright notice to it.
+        </p>
+      </article>
+    </footer>
+
+    <!-- SHARE -->
+    <aside id="shareTime" class="sharetime">
+      <button
+        type="button"
+        title="share this page"
+        class="sharetime__btn js-share-native"
+      ></button>
+    </aside>
+    <!-- CARD MODAL -->
+    <div class="caimodal js-caimodal">
+      <div class="caimodalBox">
+        <button
+          class="caimodalBox__btnClose iconbg iconbg-close"
+          type="button"
+          data-caimodal-action="close"
+        ></button>
+        <header class="caimodalBox__header js-caimodal-header"></header>
+        <main class="caimodalBox__main js-caimodal-main"></main>
+        <footer class="caimodalBox__footer js-caimodal-footer"></footer>
+      </div>
+      <div class="caimodalOverlay" data-caimodal-action="close"></div>
+    </div>
+
+    <!-- LOADING -->
+    <div class="loadingPage js-loadingPage">
+      <span class="loadingPage__icon" data-title="Loading"></span>
+    </div>
+  </body>
+</html>
