@@ -416,7 +416,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var ua_p
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/**\r\n * Support: Edge | Chrome | Opera | Android Browser | Samsung Internet\r\n */\nvar detectRam = {\n  init: function init() {\n    var ram = navigator.deviceMemory;\n\n    var notSupport = function notSupport() {\n      document.querySelector(\".js-card-ram\").classList.add(\"noSupport\");\n    };\n\n    return ram ? ram + \"GB\" : notSupport();\n  }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (detectRam);\n\n//# sourceURL=webpack:///./src/js/wepapi/detectRam.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/**\r\n * Support: Edge | Chrome | Opera | Android Browser | Samsung Internet\r\n */\nvar detectRam = {\n  init: function init() {\n    var ram = navigator.deviceMemory;\n\n    var notSupport = function notSupport() {\n      document.querySelector(\".js-card-ram\").classList.add(\"noSupport\");\n    }; // return ram ? ram + \"GB\" : notSupport();\n\n\n    return ram ? ram + \"GB\" : undefined;\n  }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (detectRam);\n\n//# sourceURL=webpack:///./src/js/wepapi/detectRam.js?");
 
 /***/ }),
 
