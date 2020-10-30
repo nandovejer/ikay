@@ -260,7 +260,6 @@ var tplMain = function (properties) {
     <span class="card__info__type">${txt.gpu.title}</span>
     <h3 class="card__info__title js-apiValue-gpu">...</h3>
   </div>
-  <canvas id="glcanvas" width="1" height="1"></canvas>
   <div class="card__noSupport">
     <span class="card__noSupport__type">${txt.gpu.title}</span>
     <p class="card__noSupport__description">${txt.main.noSupport}</p>
