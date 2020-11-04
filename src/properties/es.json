@@ -1,7 +1,7 @@
 {
   "header": {
-    "h1": "Tu navegador dice...",
-    "description": "Este es un panel sobre todos los datos que tu navegador conoce de ti.",
+    "h1": "IKAY",
+    "description": "Panel de control sobre tu huella digital",
     "location": "Geolocalización",
     "info": "Información General",
     "software": "Software",
@@ -13,10 +13,10 @@
   },
   "main": {
     "intro": {
-      "heading": "Tu huella Digital",
-      "content1": "<p>Hola, soy <a href='https://soynando.com'>Nando Muñoz</a>, bienvenido a “Tu navegador dice que...”, una web con el único fin de concienciar sobre tu privacidad en internet.</p>",
-      "content2": "<p>La información que aparece acontinuación, son datos mostrados por tu navegador sin que te des cuenta y sin haber decido tú, los <a href='https://hipertextual.com/2018/11/permisos-sitios-web-navegador'>permisos del navegador.</a>. No son 100% precisos, pero contrastados con otro tipo de datos son capaces de establecer tu <a href='https://maldita.es/malditatecnologia/2020/03/20/fingerprinting-o-como-se-crea-tu-huella-digital'>huella digital (fingerprintig)</a>.</p>",
-      "content3": "<p>A continuación, te mostré un panel con parte de la información que cedes a una web, cada vez que entras a ella. Si quieres saber más,pásate a leer <a href='#'>mi artículo sobre el tema</a> (Sólo en español 🙁)</p>"
+      "heading": "IKAY, tu huella digital",
+      "content1": "<p>Hola, soy <a href='https://soynando.com'>Nando Muñoz</a>, IKAY nace como herramienta para que puedas visualizar, identificar y gestionar tu huella digital</p>",
+      "content2": "",
+      "content3": "<p>A continuación, te mostré un panel de control con parte de la información que cedes a una web, cada vez que accedes a ella a través del navegador. Si quieres saber más,pásate a leer <a href='https://soynando.com/tu-navegador-sabe-sobre-ti-mas-de-lo-que-crees/'>mi artículo sobre el tema</a> (Sólo en español 🙁)</p>"
     },
     "cardmore": "Saber más sobre este dato",
     "noSupport": "Su navegador no admite esta funcionalidad. Bueno para tu privacidad, puede ser: D"

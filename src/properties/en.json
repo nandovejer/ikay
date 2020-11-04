@@ -1,7 +1,7 @@
 {
   "header": {
-    "h1": "Your browser says...",
-    "description": "This is a site on all the data that your browser knows about you.",
+    "h1": "IKAY",
+    "description": "Dahsboard about your digital fingerpring",
     "location": "Geolocation",
     "info": "Información General",
     "software": "Software",
@@ -13,7 +13,7 @@
   },
   "main": {
     "intro": {
-      "heading": "Your digital fingerpring",
+      "heading": "IKAY, your digital fingerpring",
       "content1": "<p>Hi, I'm <a href='https://soynando.com'>Nando Muñoz</a>, welcome to <strong>Your browser says...</strong>, a site with the only intention of show you the value of your privacy in internet.</p>",
       "content2": "<p>The information showed is data delivered by your browser every day in every site visited, even you have disabled <a href='https://www.foxnews.com/tech/browser-security-settings-you-need-to-check-now'>browser's permissions.</a>. They are not 100% exact, but compared with other types of data they are able to establish your <a href='https://money.cnn.com/2016/08/02/technology/battery-level-data-privacy/index.html'>Digital fingerprintig</a>.</p>",
       "content3": "<p>Next, I showed you a dashboard, part of the information that you give to every web visited. If you want to know more, read <a href='#'> my post about it</a> (Only Spanish sorry 🙁)</p>"

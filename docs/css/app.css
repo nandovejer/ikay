@@ -1423,7 +1423,7 @@ body.loadingEnable .loadingPage__icon:before {
 }
 .header__description {
   font-size: 12px;
-  margin-top: 8px;
+  margin-top: 0;
   margin-bottom: 8px;
 }
 .header__btnMenu {
