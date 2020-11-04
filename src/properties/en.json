@@ -1,39 +1,39 @@
 {
   "header": {
     "h1": "Your browser says...",
-    "description": "Este es un panel sobre todos los datos que tu navegador conoce de ti.",
-    "location": "Geolocalización",
+    "description": "This is a site on all the data that your browser knows about you.",
+    "location": "Geolocation",
     "info": "Información General",
     "software": "Software",
     "hardware": "Hardware",
-    "connection": "Conexión",
-    "battery": "Batería",
-    "aboutme": "Sobre Mi",
-    "share": "Compartir"
+    "connection": "Connection",
+    "battery": "Battery",
+    "aboutme": "About me",
+    "share": "Share"
   },
   "main": {
     "intro": {
-      "heading": "Tu huella Digital",
-      "content1": "<p>Hola, soy <a href='https://soynando.com'>Nando Muñoz</a>, bienvenido a “Tu navegador dice que...”, una web con el único fin de concienciar sobre tu privacidad en internet.</p>",
-      "content2": "<p>La información que aparece acontinuación, son datos mostrados por tu navegador sin que te des cuenta y sin haber decido tú, los <a href='https://hipertextual.com/2018/11/permisos-sitios-web-navegador'>permisos del navegador.</a>. No son 100% precisos, pero contrastados con otro tipo de datos son capaces de establecer tu <a href='https://maldita.es/malditatecnologia/2020/03/20/fingerprinting-o-como-se-crea-tu-huella-digital'>huella digital (fingerprintig)</a>.</p>",
-      "content3": "<p>A continuación, te mostré un panel con parte de la información que cedes a una web, cada vez que entras a ella. Si quieres saber más,pásate a leer <a href='#'>mi artículo sobre el tema</a> (Sólo en español 🙁)</p>"
+      "heading": "Your digital fingerpring",
+      "content1": "<p>Hi, I'm <a href='https://soynando.com'>Nando Muñoz</a>, welcome to <strong>Your browser says...</strong>, a site with the only intention of show you the value of your privacy in internet.</p>",
+      "content2": "<p>The information showed is data delivered by your browser every day in every site visited, even you have disabled <a href='https://www.foxnews.com/tech/browser-security-settings-you-need-to-check-now'>browser's permissions.</a>. They are not 100% exact, but compared with other types of data they are able to establish your <a href='https://money.cnn.com/2016/08/02/technology/battery-level-data-privacy/index.html'>Digital fingerprintig</a>.</p>",
+      "content3": "<p>Next, I showed you a dashboard, part of the information that you give to every web visited. If you want to know more, read <a href='#'> my post about it</a> (Only Spanish sorry 🙁)</p>"
     },
-    "cardmore": "Saber más sobre este dato",
-    "noSupport": "Su navegador no admite esta funcionalidad. Bueno para tu privacidad, puede ser: D"
+    "cardmore": "About this data",
+    "noSupport": "Your browser does not support this functionality. Good for your privacy, may be :D"
   },
 
   "aboutme": {
-    "heading": "Sobre Mi",
-    "content1": "<p>Hola, soy Nando Muñoz, senior Frontend Developer enfocado en el área @CommerceCloud | #ecommerce | #CSS lover y miembro ejecutivo de la iniciativa solidaria @HelpDev_</p>",
-    "content2": "<p class=''>Puedes contactar conmigo a través de <a href='#'>Github</a>,<a href='#'>Twitter</a> o <a href='#'>Linkedin</a></p>",
+    "heading": "About me",
+    "content1": "<p>I'm Nando Muñoz, senior Frontend Developer expert in the technology @CommerceCloud | #ecommerce | #CSS lover and member of the NGO @HelpDev_</p>",
+    "content2": "<p class=''>You can contact me by <a href='https://github.com/Silencespainter'>Github</a>,<a href='https://twitter.com/silencespainter'>Twitter</a> or <a href='https://www.linkedin.com/in/silencespainter'>Linkedin</a></p>",
     "content3": ""
   },
 
   "footer": {
-    "title": "Estado de tus datos",
-    "content1": "<p>Todos los datos que aparecen en esta web permanecen almacenados solamente en tu dispositivo, en ningún momento son envidos a ningún servidor externo, ¿por qué? porque no me interesan tus datos, me interesa tu concienciación.</p>",
-    "content2": "<p>No obstante, desconozco si GitHub (el servidor donde se aloja esta web) o ipapi.co (API externa que utilizo para determinar tu ciudad, país y compañía de telefonía a partir de tu IP) generan algún tipo almacenamiento de dato similar o ajeno al mostrado en esta web. Pero bueno, si no te preocupa compartir en facebook cada cena, momento, recuerdo o sentimiento, tampoco te preocupará la información (similar a esta) que almacenará sobre ti esa web maravillosa donde te han dicho que ves peliculas online de pagp, pero gratis:D Pérmiteme un poco de ironía :)</p>",
-    "thanks": "<p>Quiero dar las gracias a <a href='https://github.com/RobinLinus'>Robin Linus</a> por su inspirtación y a <a href='https://www.flaticon. com'>Flaicons</a> por aportar sus iconos</p>",
+    "title": "Status of your data",
+    "content1": "<p>All data appears on this website remains stored only on your device,never will be stored in a external server, why? because I'm not interested in your data, I'm interested in your awareness.</p>",
+    "content2": "<p>However, I don't know if GitHub (the server where this website is hosted) or ipapi.co (external API that I use to determine your city, country and telephone company from your IP) generate any type of data storage similar or unrelated to shown on this website. But hey, if you are not worried about sharing every dinner, moment, memory or feeling on Facebook, you will not be worried about the information (similar to this) or this  wonderful recommended by your friend about to watch streaming movies, but for free :D irony :)</p>",
+    "thanks": "<p>I want to thank <a href='https://github.com/RobinLinus'>Robin Linus</a> for his inspirational work and the icons by <a href='https://www.flaticon. com'>Flaicons</a></p>",
     "license": "<p><a href='https://opensource.org/licenses/MIT'>MIT License:</a>Basically, you can do whatever you want with software licensed under the MIT license - only if you add a copy of the original MIT license and copyright notice to it.</p>"
   },
 
@@ -46,128 +46,119 @@
     "share": "Compartir",
     "shareIn": "Comparte en {0}"
   },
-  "thanks": {
-    "title": "Créditos",
-    "description": "Inspiración:<a href='https://github.com/RobinLinus'>Robin Linus</a> | Iconos: <a href='https://www.flaticon.com'>Flaicons</a>"
-  },
-  "licence": "<a href='https://opensource.org/licenses/MIT'>MIT Licencia</a>,básicamente, puede hacer lo que quiera con el software licenciado bajo la licencia MIT - sólo si agrega una copia de la licencia original del MIT y aviso de derechos de autor a la misma",
-  "aboutproject": {
-    "title": "Sobre el proyecto",
-    "description": "descripcion del projecto lorem impsum ariatur mollitia soluta dignissimos, nulla suscipit? Expedita sint ex ducimus, qui deleniti cor"
-  },
   "location": {
-    "title": "Localización",
+    "title": "Geolocation",
     "modalinfo": {
-      "title": "Localización",
+      "title": "Geolocation",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "device": {
-    "title": "Dispositivo",
+    "title": "Device",
     "type": {
-      "mobileAndroid": "Movil Android",
-      "tabletAndroid": "Tablet Android",
+      "mobileAndroid": "Android Mobile",
+      "tabletAndroid": "Android Tablet",
       "ipad": "Ipad",
       "iphone": "Iphone",
-      "laptopWin": "Portatil Windows",
-      "laptopMac": "Macbook Pro o Macbook Air probablemente",
-      "tv": "Una Tele",
-      "unknownDevice": "Dispositivo desconocido"
+      "laptopWin": "Laptoop Windows",
+      "laptopMac": "Macbook Pro or Macbook Air probablemente",
+      "tv": "TV",
+      "unknownDevice": "Unknown Device"
     },
     "modalinfo": {
       "title": "device",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "screen": {
-    "title": "Resolución",
+    "title": "Screen",
     "modalinfo": {
-      "title": "La Resolución",
+      "title": "Screen",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "orientation": {
-    "title": "Orientación",
+    "title": "Orientation",
     "type": {
-      "portrait": "vertical",
-      "landscape": "horizontal",
-      "undefined": "Como estas usando un {0}, no se definirlo"
+      "portrait": "portrait",
+      "landscape": "landscape",
+      "undefined": "Sorry, you are using a {0}, I don't know how to define it"
     },
     "modalinfo": {
-      "title": "La Orientación",
+      "title": "Orientation",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "darkmode": {
-    "title": "Modo Oscuro",
+    "title": "Dark Mode",
     "type": {
-      "enable": "Modo Oscuro activado",
-      "disable": "Modo Claro activado"
+      "enable": "Dark Mode enable",
+      "disable": "Light Mode enable"
     },
     "modalinfo": {
-      "title": "El Modo Oscuro",
+      "title": "Dark Mode",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "lang": {
-    "title": "Lenguaje",
+    "title": "Language",
     "modalinfo": {
-      "title": "El Lenguaje",
+      "title": "Language",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "exit": {
-    "title": "Dejaste la página",
-    "firsttime": "Es tu primera vez en esta página",
-    "severaltimes": "Visitaste la página:",
+    "title": "You were here...",
+    "firsttime": "It is the first time that you leave the page",
+    "severaltimes": "You were here in this page...",
     "modalinfo": {
-      "title": "Dejaste la página",
+      "title": "You were here...",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "os": {
-    "title": "Sistema Operativo",
+    "title": "Operative System",
     "modalinfo": {
-      "title": "El Sistema Operativo",
+      "title": "Operative System",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "browser": {
-    "title": "Navegador",
+    "title": "Browser",
     "modalinfo": {
-      "title": "El Navegador",
+      "title": "Browser",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "connection": {
-    "title": "Velocidad de Descargaaa",
+    "title": "Download speed",
     "type": {
-      "lower2g": "Muy Lenta (2G)",
-      "low2g": "Lenta (2G)",
+      "lower2g": "Very Slow (2G)",
+      "low2g": "Slow (2G)",
       "normal3g": "Normal (3G | WIFI)",
-      "faster4g": "Rápida/Muy Rápida (4G | 5G | WIFI)"
+      "faster4g": "Fast/Faster (4G | 5G | WIFI)"
     },
     "modalinfo": {
-      "title": "Velocidad de descarga",
+      "title": "Download speed",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "telco": {
-    "title": "Compañia de Telefonía",
+    "title": "Your company of internet",
     "modalinfo": {
-      "title": "Compañia de Telefonía",
+      "title": "Your company of internet",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "ip": {
@@ -175,46 +166,46 @@
     "modalinfo": {
       "title": "IP",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "ram": {
-    "title": "Memoria RAM",
+    "title": "RAM Memory",
     "modalinfo": {
-      "title": "Memoria RAM",
+      "title": "RAM Memory",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "cpu": {
-    "title": "La CPU",
+    "title": "CPU",
     "modalinfo": {
-      "title": "La CPU",
+      "title": "CPU",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "gpu": {
-    "title": "La GPU",
+    "title": "GPU",
     "modalinfo": {
-      "title": "La GPU",
+      "title": "GPU",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   },
   "battery": {
-    "title": "Battería",
+    "title": "Battery",
     "type": {
-      "mode": "Modo",
-      "level": "Nivel",
-      "charged": "Cargado",
-      "remaining": "Tiempo restante",
-      "charging": "Cargando..."
+      "mode": "Mode",
+      "level": "Level",
+      "charged": "Charged",
+      "remaining": "Tiempo pending",
+      "charging": "Charging..."
     },
     "modalinfo": {
-      "title": "La Battería",
+      "title": "Battery",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='#'>About...</a>"
     }
   }
 }

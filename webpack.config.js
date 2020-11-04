@@ -70,7 +70,7 @@ const config = function (env, args) {
           ],
         },
         {
-          test: /\.(eot|ttf|woff|woff2)$/,
+          test: /\.(eot|svg|ttf|woff|woff2)$/,
           use: [
             {
               loader: "url-loader",
@@ -82,19 +82,19 @@ const config = function (env, args) {
             },
           ],
         },
-        {
-          test: /\.(svg)$/,
-          use: [
-            {
-              loader: "url-loader",
-              options: {
-                name: "images/svg/[name].[ext]",
-                publicPath: "../",
-                limit: false,
-              },
-            },
-          ],
-        },
+        // {
+        //   test: /\.(svg)$/,
+        //   use: [
+        //     {
+        //       loader: "url-loader",
+        //       options: {
+        //         name: "images/svg/[name].[ext]",
+        //         publicPath: "../",
+        //         limit: false,
+        //       },
+        //     },
+        //   ],
+        // },
       ],
     },
     optimization: {

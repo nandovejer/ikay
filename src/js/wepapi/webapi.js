@@ -6,7 +6,7 @@ import speedAPI from "./speedAPI";
 
 var webapi = {
   init: function () {
-    //locationAPI.init();
+    locationAPI.init();
     webapi.setNativeObj(nativeObj);
     batteryAPI.get((battery) => {
       batteryAPI.set(battery);
