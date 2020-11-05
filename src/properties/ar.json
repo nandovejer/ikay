@@ -1,7 +1,7 @@
 {
   "header": {
-    "h1": "متصفحك يقول",
-    "description": "Este es un panel sobre todos los datos que tu navegador conoce de ti.",
+    "h1": "IKAY",
+    "description": "لوحة معلومات حول بصمتك الرقمية",
     "location": "Geolocalización",
     "info": "Información General",
     "software": "Software",
@@ -13,30 +13,27 @@
   },
   "main": {
     "intro": {
-      "heading": "Tu huella Digital",
-      "content1": "<p>Hola, soy <a href='https://soynando.com'>Nando Muñoz</a>, bienvenido a “Tu navegador dice que...”, una web con el único fin de concienciar sobre tu privacidad en internet.</p>",
-      "content2": "<p>La información que aparece acontinuación, son datos mostrados por tu navegador sin que te des cuenta y sin haber decido tú, los <a href='https://hipertextual.com/2018/11/permisos-sitios-web-navegador'>permisos del navegador.</a>. No son 100% precisos, pero contrastados con otro tipo de datos son capaces de establecer tu <a href='https://maldita.es/malditatecnologia/2020/03/20/fingerprinting-o-como-se-crea-tu-huella-digital'>huella digital (fingerprintig)</a>.</p>",
-      "content3": "<p>A continuación, te mostré un panel con parte de la información que cedes a una web, cada vez que entras a ella. Si quieres saber más,pásate a leer <a href='#'>mi artículo sobre el tema</a> (Sólo en español 🙁)</p>"
+      "heading": "IKAY, tu huella digital",
+      "content1": "<p>Hola, soy <a href='https://soynando.com'>Nando Muñoz</a>, IKAY nace como herramienta para que puedas visualizar, identificar y gestionar tu huella digital</p>",
+      "content2": "<p>A continuación, te mostraré un panel de control con parte de la información que cedes a una web, cada vez que accedes a ella a través del navegador. Si quieres saber más,pásate a leer <a href='https://soynando.com/tu-navegador-sabe-sobre-ti-mas-de-lo-que-crees/'>mi artículo sobre el tema</a> (Sólo en español 🙁)</p>",
+      "content3": ""
     },
     "cardmore": "Saber más sobre este dato",
     "noSupport": "Su navegador no admite esta funcionalidad. Bueno para tu privacidad, puede ser: D"
   },
-
   "aboutme": {
     "heading": "Sobre Mi",
-    "content1": "<p>Hola, soy Nando Muñoz, senior Frontend Developer enfocado en el área @CommerceCloud | #ecommerce | #CSS lover y miembro ejecutivo de la iniciativa solidaria @HelpDev_</p>",
-    "content2": "<p class=''>Puedes contactar conmigo a través de <a href='#'>Github</a>,<a href='#'>Twitter</a> o <a href='#'>Linkedin</a></p>",
+    "content1": "<p> Frontend Senior enfocado en el área de ecommerce con más de 7 años de expriencia en plataformas como <a href='https://www.sap.com/spain/acquired-brands/what-is-hybris.html'>Hybris</a> y <a href='https://www.salesforce.com/es/products/commerce-cloud/ecommerce/'>Salesforce Commerce Cloud</a>. Ejerciendo labores de desarrollo y tareas de coordinación como lider de un equipo de Frontend internacional. Además apasionado en materia de diseño y UX.</p>",
+    "content2": "<p class=''>Puedes contactar conmigo vía <a href='https://github.com/Silencespainter'>Github</a>,<a href='https://twitter.com/silencespainter'>Twitter</a> o <a href='https://www.linkedin.com/in/silencespainter'>Linkedin</a></p>",
     "content3": ""
   },
-
   "footer": {
     "title": "Estado de tus datos",
     "content1": "<p>Todos los datos que aparecen en esta web permanecen almacenados solamente en tu dispositivo, en ningún momento son envidos a ningún servidor externo, ¿por qué? porque no me interesan tus datos, me interesa tu concienciación.</p>",
     "content2": "<p>No obstante, desconozco si GitHub (el servidor donde se aloja esta web) o ipapi.co (API externa que utilizo para determinar tu ciudad, país y compañía de telefonía a partir de tu IP) generan algún tipo almacenamiento de dato similar o ajeno al mostrado en esta web. Pero bueno, si no te preocupa compartir en facebook cada cena, momento, recuerdo o sentimiento, tampoco te preocupará la información (similar a esta) que almacenará sobre ti esa web maravillosa donde te han dicho que ves peliculas online de pagp, pero gratis:D Pérmiteme un poco de ironía :)</p>",
     "thanks": "<p>Quiero dar las gracias a <a href='https://github.com/RobinLinus'>Robin Linus</a> por su inspirtación y a <a href='https://www.flaticon. com'>Flaicons</a> por aportar sus iconos</p>",
-    "license": "<p><a href='https://opensource.org/licenses/MIT'>MIT License:</a>Basically, you can do whatever you want with software licensed under the MIT license - only if you add a copy of the original MIT license and copyright notice to it.</p>"
+    "license": "<p><a href='https://opensource.org/licenses/MIT'>LICENCIA MIT - https://opensource.org/licenses/MIT</a>.</p>"
   },
-
   "global": {
     "spanish": "español",
     "english": "inglés",
@@ -46,21 +43,12 @@
     "share": "Compartir",
     "shareIn": "Comparte en {0}"
   },
-  "thanks": {
-    "title": "Créditos",
-    "description": "Inspiración:<a href='https://github.com/RobinLinus'>Robin Linus</a> | Iconos: <a href='https://www.flaticon.com'>Flaicons</a>"
-  },
-  "licence": "<a href='https://opensource.org/licenses/MIT'>MIT Licencia</a>,básicamente, puede hacer lo que quiera con el software licenciado bajo la licencia MIT - sólo si agrega una copia de la licencia original del MIT y aviso de derechos de autor a la misma",
-  "aboutproject": {
-    "title": "Sobre el proyecto",
-    "description": "descripcion del projecto lorem impsum ariatur mollitia soluta dignissimos, nulla suscipit? Expedita sint ex ducimus, qui deleniti cor"
-  },
   "location": {
-    "title": "Localización",
+    "title": "Geolocalización",
     "modalinfo": {
-      "title": "Localización",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "title": "Geolocalización",
+      "description": "<p>Con la geolocalización IP es posible realizar un seguimiento de la ubicación de los visitantes, utilizando la base de datos de geolocalización IP, o una API. Los visitantes podrán ser geolocalizados en cualquier ciudad, región o país.</p>",
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Geolocalizaci%C3%B3n#Geolocalizaci%C3%B3n_de_los_visitantes_en_Internet'>Más información sobre Geolocalización</a>"
     }
   },
   "device": {
@@ -71,22 +59,22 @@
       "ipad": "Ipad",
       "iphone": "Iphone",
       "laptopWin": "Portatil Windows",
-      "laptopMac": "Macbook Pro o Macbook Air probablemente",
+      "laptopMac": "Macbook, iMac o Mac Mini",
       "tv": "Una Tele",
       "unknownDevice": "Dispositivo desconocido"
     },
     "modalinfo": {
-      "title": "device",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "title": "Dispositivo",
+      "description": "<p>Identificación del tipo de dispositivo desde el que te estás conectando (Movil Android, Tablet Android, Ipad, Iphone, Portatil Windows, Macbook, iMac o Mac Mini, Una Tele u otro tipo).</p>",
+      "moreinfo": ""
     }
   },
   "screen": {
     "title": "Resolución",
     "modalinfo": {
-      "title": "La Resolución",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "title": "Resolución",
+      "description": "<p>La resolución de pantalla es el número de píxeles que puede ser mostrado en la pantalla. Viene dada por el producto del ancho por el alto con el cual se obtiene una relación llamada 'relación de aspecto'. En esta relación de aspecto, se puede encontrar una variación, está de acuerdo a la forma del monitor y de la tarjeta gráfica.</p>",
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Resoluci%C3%B3n_de_pantalla'>Más información sobre Resolución de pantalla</a>"
     }
   },
   "orientation": {
@@ -97,9 +85,9 @@
       "undefined": "Como estas usando un {0}, no se definirlo"
     },
     "modalinfo": {
-      "title": "La Orientación",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "title": "Orientación",
+      "description": "<p>Define la orientación de tu dispositivo, siempre que sea un móvil o una tablet</p>",
+      "moreinfo": ""
     }
   },
   "darkmode": {
@@ -110,42 +98,44 @@
     },
     "modalinfo": {
       "title": "El Modo Oscuro",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "description": "<p>Este modo permite reducir de forma notable la fatiga visual. Consite en definir el fondo a un tono oscuro (negro o gris).</p>",
+      "moreinfo": "<a target='_blank' href='https://en.wikipedia.org/wiki/Light-on-dark_color_scheme'>Más información sobre el Modo ocuro</a>"
     }
   },
   "lang": {
-    "title": "Lenguaje",
+    "title": "Idioma",
     "modalinfo": {
-      "title": "El Lenguaje",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "title": "Idioma",
+      "description": "<p>El idioma que tienes definido en tu navegador y probablemente en tu dispositivo.</p>",
+      "moreinfo": ""
     }
   },
+
   "exit": {
-    "title": "Dejaste la página",
+    "title": "Dejaste la página...",
     "firsttime": "Es tu primera vez en esta página",
-    "severaltimes": "Visitaste la página:",
+    "severaltimes": "Visitaste la página...",
     "modalinfo": {
-      "title": "Dejaste la página",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "title": "Analítica Web",
+      "description": "<p>La analítica web es la recopilación, medición, análisis y reporte de datos web con el propósito de comprender y optimizar el uso de la web. Sin embargo, la analítica Web (Web Analytics) no es sólo un proceso para medir el tráfico web, sino que se utiliza como una herramienta para evaluar y mejorar la eficacia de un sitio web.</p>",
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Anal%C3%ADtica_web#Concepto'>Más información sobre Analítica Web</a>"
     }
   },
+
   "os": {
     "title": "Sistema Operativo",
     "modalinfo": {
       "title": "El Sistema Operativo",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "description": "<p>Un sistema operativo (SO o, frecuentemente, OS —del inglés operating system—) es el software principal o conjunto de programas de un sistema informático que gestiona los recursos de hardware y provee servicios a los programas de aplicación de software, ejecutándose en modo privilegiado respecto de los restantes.</p>",
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Sistema_operativo'>Más información sobre Sistema Operativo</a>"
     }
   },
   "browser": {
     "title": "Navegador",
     "modalinfo": {
-      "title": "El Navegador",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "title": "Navegador",
+      "description": "<p>Un navegador web (en inglés, web browser) es un software, aplicación o programa que permite el acceso a la Web, interpretando la información de distintos tipos de archivos y sitios web para que estos puedan ser vistos.</p>",
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Navegador_web'>Más información sobre Navegador</a>"
     }
   },
   "connection": {
@@ -158,52 +148,52 @@
     },
     "modalinfo": {
       "title": "Velocidad de descarga",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "description": "<p>La velocidad de conexión es el promedio de información que se transmite entre dos dispositivos por unidad de tiempo, en un sistema de transmisión. Normalmente las unidades en las que se mide la velocidad de conexión dependen del campo en el que se esté estudiando. En Telecomunicaciones se utiliza la unidad de bits por segundo (bit/s). Es bastante frecuente la utilización de diferentes magnitudes como kbit/s (a veces abreviado 'kbps').</p>",
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Velocidad_de_conexi%C3%B3n'>Más información sobre Velocidad de conexión</a>"
     }
   },
   "telco": {
     "title": "Compañia de Telefonía",
     "modalinfo": {
       "title": "Compañia de Telefonía",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "description": "<p>Una compañía telefónica, también conocido como telco, proveedor de servicios de telefonía, u operador de telecomunicaciones, es un tipo de proveedor de servicios de comunicaciones (CSP) (más precisamente, un proveedor de servicios de telecomunicaciones o TSP) que proporciona servicios de telecomunicaciones tales como telefonía y acceso a comunicaciones de datos. Muchas compañías telefónicas fueron en un tiempo de las agencias gubernamentales o de propiedad privada, pero regulada por el estado de los monopolios. Las agencias gubernamentales se refieren a menudo, sobre todo en Europa, como PTT (servicios de correo, telégrafo y teléfono).</p>",
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_telef%C3%B3nica'>Más información sobre Compañia de Telefonía</a>"
     }
   },
   "ip": {
     "title": "IP",
     "modalinfo": {
       "title": "IP",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "description": "<p>La dirección IP es un conjunto de números que identifica a tu conexión a internet de un dispositivo (computadora, laptop, teléfono inteligente).</p>",
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Direcci%C3%B3n_IP'>Más información sobre IP</a>"
     }
   },
   "ram": {
     "title": "Memoria RAM",
     "modalinfo": {
       "title": "Memoria RAM",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "description": "<p>La memoria de acceso aleatorio (Random Access Memory, RAM) se utiliza como memoria de trabajo de computadoras y otros dispositivos para el sistema operativo, los programas y la mayor parte del software. En la RAM se cargan todas las instrucciones que ejecuta la unidad central de procesamiento (procesador) y otras unidades del computador, además de contener los datos que manipulan los distintos programas.</p>",
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Memoria_de_acceso_aleatorio'>Más información sobre Memoria RAM</a>"
     }
   },
   "cpu": {
-    "title": "La CPU",
+    "title": "Microprocesador",
     "modalinfo": {
-      "title": "La CPU",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "title": "Microprocesador",
+      "description": "<p>El microprocesador (o simplemente procesador) es el circuito integrado central más complejo de un sistema informático; a modo de ilustración, se le suele llamar por analogía el «cerebro» de un ordenador.</p>",
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Microprocesador'>Más información sobre Microprocesador</a>"
     }
   },
   "gpu": {
-    "title": "La GPU",
+    "title": "La Tarjeta Gráfica",
     "modalinfo": {
-      "title": "La GPU",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "title": "La Tarjeta Gráfica",
+      "description": "<p>Una tarjeta gráfica es una tarjeta de expansión de la placa base del ordenador que se encarga de procesar los datos provenientes de la unidad central de procesamiento (CPU) y transformarlos en información comprensible y representable en el dispositivo de salida (por ejemplo: monitor, televisor o proyector). Estas tarjetas utilizan una unidad de procesamiento gráfico o GPU, que muchas veces se usa erróneamente para referirse a la tarjeta gráfica en sí.</p>",
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica'>Más información sobre la tarjeta gráfica</a>"
     }
   },
   "battery": {
-    "title": "Battería",
+    "title": "Batería",
     "type": {
       "mode": "Modo",
       "level": "Nivel",
@@ -212,9 +202,9 @@
       "charging": "Cargando..."
     },
     "modalinfo": {
-      "title": "La Battería",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "title": "API Batería",
+      "description": "<p>La API de Estado de Batería, también conocida como 'Battery API', provee información acerca del sistema de carga de la batería y permite notificar mediante eventos que son enviados cuando el nivel de la batería cambia. Este puede ser usado para ajustar el uso de recursos por parte de una aplicación y evitar un gasto innecesario de energía cuando la batería esta baja o para guardar cambios en un archivo antes de que la batería se agote y así prevenir perdida de información.</p>",
+      "moreinfo": "<a target='_blank' href='https://developer.mozilla.org/es/docs/WebAPI/Estado_de_Bateria'>Más información sobre API Batería</a>"
     }
   }
 }

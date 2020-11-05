@@ -48,7 +48,7 @@
     "modalinfo": {
       "title": "Geolocalización",
       "description": "<p>Con la geolocalización IP es posible realizar un seguimiento de la ubicación de los visitantes, utilizando la base de datos de geolocalización IP, o una API. Los visitantes podrán ser geolocalizados en cualquier ciudad, región o país.</p>",
-      "moreinfo": "<a href='https://es.wikipedia.org/wiki/Geolocalizaci%C3%B3n#Geolocalizaci%C3%B3n_de_los_visitantes_en_Internet'>Más información sobre Geolocalización</a>"
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Geolocalizaci%C3%B3n#Geolocalizaci%C3%B3n_de_los_visitantes_en_Internet'>Más información sobre Geolocalización</a>"
     }
   },
   "device": {
@@ -74,7 +74,7 @@
     "modalinfo": {
       "title": "Resolución",
       "description": "<p>La resolución de pantalla es el número de píxeles que puede ser mostrado en la pantalla. Viene dada por el producto del ancho por el alto con el cual se obtiene una relación llamada 'relación de aspecto'. En esta relación de aspecto, se puede encontrar una variación, está de acuerdo a la forma del monitor y de la tarjeta gráfica.</p>",
-      "moreinfo": "<a href='https://es.wikipedia.org/wiki/Resoluci%C3%B3n_de_pantalla'>Más información sobre Resolución de pantalla</a>"
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Resoluci%C3%B3n_de_pantalla'>Más información sobre Resolución de pantalla</a>"
     }
   },
   "orientation": {
@@ -99,7 +99,7 @@
     "modalinfo": {
       "title": "El Modo Oscuro",
       "description": "<p>Este modo permite reducir de forma notable la fatiga visual. Consite en definir el fondo a un tono oscuro (negro o gris).</p>",
-      "moreinfo": "<a href='https://en.wikipedia.org/wiki/Light-on-dark_color_scheme'>Más información sobre el Modo ocuro</a>"
+      "moreinfo": "<a target='_blank' href='https://en.wikipedia.org/wiki/Light-on-dark_color_scheme'>Más información sobre el Modo ocuro</a>"
     }
   },
   "lang": {
@@ -118,7 +118,7 @@
     "modalinfo": {
       "title": "Analítica Web",
       "description": "<p>La analítica web es la recopilación, medición, análisis y reporte de datos web con el propósito de comprender y optimizar el uso de la web. Sin embargo, la analítica Web (Web Analytics) no es sólo un proceso para medir el tráfico web, sino que se utiliza como una herramienta para evaluar y mejorar la eficacia de un sitio web.</p>",
-      "moreinfo": "<a href='https://es.wikipedia.org/wiki/Anal%C3%ADtica_web#Concepto'>Más información sobre Analítica Web</a>"
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Anal%C3%ADtica_web#Concepto'>Más información sobre Analítica Web</a>"
     }
   },
 
@@ -127,7 +127,7 @@
     "modalinfo": {
       "title": "El Sistema Operativo",
       "description": "<p>Un sistema operativo (SO o, frecuentemente, OS —del inglés operating system—) es el software principal o conjunto de programas de un sistema informático que gestiona los recursos de hardware y provee servicios a los programas de aplicación de software, ejecutándose en modo privilegiado respecto de los restantes.</p>",
-      "moreinfo": "<a href='https://es.wikipedia.org/wiki/Sistema_operativo'>Más información sobre Sistema Operativo</a>"
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Sistema_operativo'>Más información sobre Sistema Operativo</a>"
     }
   },
   "browser": {
@@ -135,7 +135,7 @@
     "modalinfo": {
       "title": "Navegador",
       "description": "<p>Un navegador web (en inglés, web browser) es un software, aplicación o programa que permite el acceso a la Web, interpretando la información de distintos tipos de archivos y sitios web para que estos puedan ser vistos.</p>",
-      "moreinfo": "<a href='https://es.wikipedia.org/wiki/Navegador_web'>Más información sobre Navegador</a>"
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Navegador_web'>Más información sobre Navegador</a>"
     }
   },
   "connection": {
@@ -149,7 +149,7 @@
     "modalinfo": {
       "title": "Velocidad de descarga",
       "description": "<p>La velocidad de conexión es el promedio de información que se transmite entre dos dispositivos por unidad de tiempo, en un sistema de transmisión. Normalmente las unidades en las que se mide la velocidad de conexión dependen del campo en el que se esté estudiando. En Telecomunicaciones se utiliza la unidad de bits por segundo (bit/s). Es bastante frecuente la utilización de diferentes magnitudes como kbit/s (a veces abreviado 'kbps').</p>",
-      "moreinfo": "<a href='https://es.wikipedia.org/wiki/Velocidad_de_conexi%C3%B3n'>Más información sobre Velocidad de conexión</a>"
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Velocidad_de_conexi%C3%B3n'>Más información sobre Velocidad de conexión</a>"
     }
   },
   "telco": {
@@ -157,7 +157,7 @@
     "modalinfo": {
       "title": "Compañia de Telefonía",
       "description": "<p>Una compañía telefónica, también conocido como telco, proveedor de servicios de telefonía, u operador de telecomunicaciones, es un tipo de proveedor de servicios de comunicaciones (CSP) (más precisamente, un proveedor de servicios de telecomunicaciones o TSP) que proporciona servicios de telecomunicaciones tales como telefonía y acceso a comunicaciones de datos. Muchas compañías telefónicas fueron en un tiempo de las agencias gubernamentales o de propiedad privada, pero regulada por el estado de los monopolios. Las agencias gubernamentales se refieren a menudo, sobre todo en Europa, como PTT (servicios de correo, telégrafo y teléfono).</p>",
-      "moreinfo": "<a href='https://es.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_telef%C3%B3nica'>Más información sobre Compañia de Telefonía</a>"
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_telef%C3%B3nica'>Más información sobre Compañia de Telefonía</a>"
     }
   },
   "ip": {
@@ -165,7 +165,7 @@
     "modalinfo": {
       "title": "IP",
       "description": "<p>La dirección IP es un conjunto de números que identifica a tu conexión a internet de un dispositivo (computadora, laptop, teléfono inteligente).</p>",
-      "moreinfo": "<a href='https://es.wikipedia.org/wiki/Direcci%C3%B3n_IP'>Más información sobre IP</a>"
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Direcci%C3%B3n_IP'>Más información sobre IP</a>"
     }
   },
   "ram": {
@@ -173,7 +173,7 @@
     "modalinfo": {
       "title": "Memoria RAM",
       "description": "<p>La memoria de acceso aleatorio (Random Access Memory, RAM) se utiliza como memoria de trabajo de computadoras y otros dispositivos para el sistema operativo, los programas y la mayor parte del software. En la RAM se cargan todas las instrucciones que ejecuta la unidad central de procesamiento (procesador) y otras unidades del computador, además de contener los datos que manipulan los distintos programas.</p>",
-      "moreinfo": "<a href='https://es.wikipedia.org/wiki/Memoria_de_acceso_aleatorio'>Más información sobre Memoria RAM</a>"
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Memoria_de_acceso_aleatorio'>Más información sobre Memoria RAM</a>"
     }
   },
   "cpu": {
@@ -181,7 +181,7 @@
     "modalinfo": {
       "title": "Microprocesador",
       "description": "<p>El microprocesador (o simplemente procesador) es el circuito integrado central más complejo de un sistema informático; a modo de ilustración, se le suele llamar por analogía el «cerebro» de un ordenador.</p>",
-      "moreinfo": "<a href='https://es.wikipedia.org/wiki/Microprocesador'>Más información sobre Microprocesador</a>"
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Microprocesador'>Más información sobre Microprocesador</a>"
     }
   },
   "gpu": {
@@ -189,7 +189,7 @@
     "modalinfo": {
       "title": "La Tarjeta Gráfica",
       "description": "<p>Una tarjeta gráfica es una tarjeta de expansión de la placa base del ordenador que se encarga de procesar los datos provenientes de la unidad central de procesamiento (CPU) y transformarlos en información comprensible y representable en el dispositivo de salida (por ejemplo: monitor, televisor o proyector). Estas tarjetas utilizan una unidad de procesamiento gráfico o GPU, que muchas veces se usa erróneamente para referirse a la tarjeta gráfica en sí.</p>",
-      "moreinfo": "<a href='https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica'>Más información sobre la tarjeta gráfica</a>"
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica'>Más información sobre la tarjeta gráfica</a>"
     }
   },
   "battery": {
@@ -204,7 +204,7 @@
     "modalinfo": {
       "title": "API Batería",
       "description": "<p>La API de Estado de Batería, también conocida como 'Battery API', provee información acerca del sistema de carga de la batería y permite notificar mediante eventos que son enviados cuando el nivel de la batería cambia. Este puede ser usado para ajustar el uso de recursos por parte de una aplicación y evitar un gasto innecesario de energía cuando la batería esta baja o para guardar cambios en un archivo antes de que la batería se agote y así prevenir perdida de información.</p>",
-      "moreinfo": "<a href='https://developer.mozilla.org/es/docs/WebAPI/Estado_de_Bateria'>Más información sobre API Batería</a>"
+      "moreinfo": "<a target='_blank' href='https://developer.mozilla.org/es/docs/WebAPI/Estado_de_Bateria'>Más información sobre API Batería</a>"
     }
   }
 }

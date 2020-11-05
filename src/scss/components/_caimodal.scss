@@ -87,6 +87,9 @@ $caimodal-icon-size: 32px;
       }
     }
     &__footer {
+      padding: 8px 0;
+      font-size: 0.85em;
+      text-align: right;
       &:empty {
         height: 0;
       }
