@@ -3,7 +3,7 @@
     "h1": "IKAY",
     "description": "Dahsboard about your digital fingerpring",
     "location": "Geolocation",
-    "info": "Información General",
+    "info": "Information",
     "software": "Software",
     "hardware": "Hardware",
     "connection": "Connection",
@@ -14,9 +14,9 @@
   "main": {
     "intro": {
       "heading": "IKAY, your digital fingerpring",
-      "content1": "<p>Hi, I'm <a href='https://soynando.com'>Nando Muñoz</a>, welcome to <strong>Your browser says...</strong>, a site with the only intention of show you the value of your privacy in internet.</p>",
-      "content2": "<p>The information showed is data delivered by your browser every day in every site visited, even you have disabled <a href='https://www.foxnews.com/tech/browser-security-settings-you-need-to-check-now'>browser's permissions.</a>. They are not 100% exact, but compared with other types of data they are able to establish your <a href='https://money.cnn.com/2016/08/02/technology/battery-level-data-privacy/index.html'>Digital fingerprintig</a>.</p>",
-      "content3": "<p>Next, I showed you a dashboard, part of the information that you give to every web visited. If you want to know more, read <a href='#'> my post about it</a> (Only Spanish sorry 🙁)</p>"
+      "content1": "<p>Hi, I'm <a href='https://soynando.com'> Nando Muñoz </a>, IKAY is a tool that you can visualize, identify and manage your fingerprint.</p>",
+      "content2": "<p>Next, I will show you a dashboard with part of the information that you delive to a website, every time you access by your browser. If you want to know more, you can read <a href='https://soynando.com/tu-navegador-sabe-sobre-ti-mas-de-lo-que-crees/'> my article on the subject </ a> (Only in Spanish 🙁)</p>",
+      "content3": ""
     },
     "cardmore": "About this data",
     "noSupport": "Your browser does not support this functionality. Good for your privacy, may be :D"
@@ -24,34 +24,35 @@
 
   "aboutme": {
     "heading": "About me",
-    "content1": "<p>I'm Nando Muñoz, senior Frontend Developer expert in the technology @CommerceCloud | #ecommerce | #CSS lover and member of the NGO @HelpDev_</p>",
+    "content1": "<p>Frontend Senior, expert in the ecommerce with more than 7 years of experience on platforms like <a href = 'https: //www.sap.com/spain/acquired-brands/what-is-hybris.html'>  Hybris </a> and <a href='https://www.salesforce.com/es/products/commerce-cloud/ecommerce/'> Salesforce Commerce Cloud </a>. Working developer and lead of a international Frontend team. Also passionate about design and UX.</p>",
     "content2": "<p class=''>You can contact me by <a href='https://github.com/Silencespainter'>Github</a>,<a href='https://twitter.com/silencespainter'>Twitter</a> or <a href='https://www.linkedin.com/in/silencespainter'>Linkedin</a></p>",
     "content3": ""
   },
 
   "footer": {
     "title": "Status of your data",
-    "content1": "<p>All data appears on this website remains stored only on your device,never will be stored in a external server, why? because I'm not interested in your data, I'm interested in your awareness.</p>",
-    "content2": "<p>However, I don't know if GitHub (the server where this website is hosted) or ipapi.co (external API that I use to determine your city, country and telephone company from your IP) generate any type of data storage similar or unrelated to shown on this website. But hey, if you are not worried about sharing every dinner, moment, memory or feeling on Facebook, you will not be worried about the information (similar to this) or this  wonderful recommended by your friend about to watch streaming movies, but for free :D irony :)</p>",
-    "thanks": "<p>I want to thank <a href='https://github.com/RobinLinus'>Robin Linus</a> for his inspirational work and the icons by <a href='https://www.flaticon. com'>Flaicons</a></p>",
-    "license": "<p><a href='https://opensource.org/licenses/MIT'>MIT License:</a>Basically, you can do whatever you want with software licensed under the MIT license - only if you add a copy of the original MIT license and copyright notice to it.</p>"
+    "content1": "<p>All data shown on this website is save only on your device, never will be stored in a external server, why? because I'm not interested in your data, I'm interested in your awareness.</p>",
+    "content2": "<p>However, I don't know if GitHub (the server hosting) or ipapi.co (external API that I use to determine your city, country and telephone company from your IP) generate any type of data storage similar to shown on this website. But hey, if you are not worried about sharing every dinner, moment, memory or feeling on Facebook, you will not be worried about the information (similar to this) or this aweasome web of free streaming movies recomended by your friend. :D irony :)</p>",
+    "thanks": "<p>I want to thank <a href='https://github.com/RobinLinus'>Robin Linus</a> for his inspirational work and the great icons by <a href='https://www.flaticon. com'>Flaicons</a></p>",
+    "license": "<p><a href='https://opensource.org/licenses/MIT'>MIT LICENSE - https://opensource.org/licenses/MIT</a>.</p>"
   },
 
   "global": {
-    "spanish": "español",
-    "english": "inglés",
-    "arabic": "árabe",
-    "contact": "Contacto",
-    "shareSocialMedia": "Compartir en RRSS",
-    "share": "Compartir",
-    "shareIn": "Comparte en {0}"
+    "spanish": "Spanish",
+    "english": "English",
+    "arabic": "Arabic",
+    "contact": "Contact",
+    "shareSocialMedia": "Share in Social Media",
+    "share": "Share",
+    "shareIn": "Sahre on {0}"
   },
+
   "location": {
     "title": "Geolocation",
     "modalinfo": {
       "title": "Geolocation",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>About...</a>"
+      "moreinfo": "<a href='https://en.wikipedia.org/wiki/Internet_geolocation'>More info about Geolocation</a>"
     }
   },
   "device": {

@@ -15,8 +15,8 @@
     "intro": {
       "heading": "IKAY, tu huella digital",
       "content1": "<p>Hola, soy <a href='https://soynando.com'>Nando Muñoz</a>, IKAY nace como herramienta para que puedas visualizar, identificar y gestionar tu huella digital</p>",
-      "content2": "",
-      "content3": "<p>A continuación, te mostré un panel de control con parte de la información que cedes a una web, cada vez que accedes a ella a través del navegador. Si quieres saber más,pásate a leer <a href='https://soynando.com/tu-navegador-sabe-sobre-ti-mas-de-lo-que-crees/'>mi artículo sobre el tema</a> (Sólo en español 🙁)</p>"
+      "content2": "<p>A continuación, te mostraré un panel de control con parte de la información que cedes a una web, cada vez que accedes a ella a través del navegador. Si quieres saber más,pásate a leer <a href='https://soynando.com/tu-navegador-sabe-sobre-ti-mas-de-lo-que-crees/'>mi artículo sobre el tema</a> (Sólo en español 🙁)</p>",
+      "content3": ""
     },
     "cardmore": "Saber más sobre este dato",
     "noSupport": "Su navegador no admite esta funcionalidad. Bueno para tu privacidad, puede ser: D"
@@ -24,8 +24,8 @@
 
   "aboutme": {
     "heading": "Sobre Mi",
-    "content1": "<p>Hola, soy Nando Muñoz, senior Frontend Developer enfocado en el área @CommerceCloud | #ecommerce | #CSS lover y miembro ejecutivo de la iniciativa solidaria @HelpDev_</p>",
-    "content2": "<p class=''>Puedes contactar conmigo a través de <a href='#'>Github</a>,<a href='#'>Twitter</a> o <a href='#'>Linkedin</a></p>",
+    "content1": "<p> Frontend Senior enfocado en el área de ecommerce con más de 7 años de expriencia en plataformas como <a href='https://www.sap.com/spain/acquired-brands/what-is-hybris.html'>Hybris</a> y <a href='https://www.salesforce.com/es/products/commerce-cloud/ecommerce/'>Salesforce Commerce Cloud</a>. Ejerciendo labores de desarrollo y tareas de coordinación como lider de un equipo de Frontend internacional. Además apasionado en materia de diseño y UX.</p>",
+    "content2": "<p class=''>Puedes contactar conmigo vía <a href='https://github.com/Silencespainter'>Github</a>,<a href='https://twitter.com/silencespainter'>Twitter</a> o <a href='https://www.linkedin.com/in/silencespainter'>Linkedin</a></p>",
     "content3": ""
   },
 
@@ -34,7 +34,7 @@
     "content1": "<p>Todos los datos que aparecen en esta web permanecen almacenados solamente en tu dispositivo, en ningún momento son envidos a ningún servidor externo, ¿por qué? porque no me interesan tus datos, me interesa tu concienciación.</p>",
     "content2": "<p>No obstante, desconozco si GitHub (el servidor donde se aloja esta web) o ipapi.co (API externa que utilizo para determinar tu ciudad, país y compañía de telefonía a partir de tu IP) generan algún tipo almacenamiento de dato similar o ajeno al mostrado en esta web. Pero bueno, si no te preocupa compartir en facebook cada cena, momento, recuerdo o sentimiento, tampoco te preocupará la información (similar a esta) que almacenará sobre ti esa web maravillosa donde te han dicho que ves peliculas online de pagp, pero gratis:D Pérmiteme un poco de ironía :)</p>",
     "thanks": "<p>Quiero dar las gracias a <a href='https://github.com/RobinLinus'>Robin Linus</a> por su inspirtación y a <a href='https://www.flaticon. com'>Flaicons</a> por aportar sus iconos</p>",
-    "license": "<p><a href='https://opensource.org/licenses/MIT'>MIT License:</a>Basically, you can do whatever you want with software licensed under the MIT license - only if you add a copy of the original MIT license and copyright notice to it.</p>"
+    "license": "<p><a href='https://opensource.org/licenses/MIT'>LICENCIA MIT - https://opensource.org/licenses/MIT</a>.</p>"
   },
 
   "global": {
@@ -46,21 +46,13 @@
     "share": "Compartir",
     "shareIn": "Comparte en {0}"
   },
-  "thanks": {
-    "title": "Créditos",
-    "description": "Inspiración:<a href='https://github.com/RobinLinus'>Robin Linus</a> | Iconos: <a href='https://www.flaticon.com'>Flaicons</a>"
-  },
-  "licence": "<a href='https://opensource.org/licenses/MIT'>MIT Licencia</a>,básicamente, puede hacer lo que quiera con el software licenciado bajo la licencia MIT - sólo si agrega una copia de la licencia original del MIT y aviso de derechos de autor a la misma",
-  "aboutproject": {
-    "title": "Sobre el proyecto",
-    "description": "descripcion del projecto lorem impsum ariatur mollitia soluta dignissimos, nulla suscipit? Expedita sint ex ducimus, qui deleniti cor"
-  },
+
   "location": {
     "title": "Localización",
     "modalinfo": {
       "title": "Localización",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem animi itaque sint quos voluptatibus in fuga optio ad esse corporis sequi quia, sapiente, consequatur molestiae nemo nulla iusto quo.</p>",
-      "moreinfo": "<a href='#'>Sobre...</a>"
+      "moreinfo": "<a href='https://en.wikipedia.org/wiki/Internet_geolocation'>More info about Geolocation</a>"
     }
   },
   "device": {
