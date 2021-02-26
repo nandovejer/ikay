@@ -1,8 +1,8 @@
 {
   "name": "ikay",
   "version": "1.1.0",
-  "description": "Starter project template boilerplate based on Webpack with SASS and babel ES6/7 support.",
-  "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
+  "description": "IKAY is a tool that you can visualize, identify and manage your fingerprint. I will show you a dashboard with part of the information that you delive to a website, every time you access by your browser.",
+  "homepage": "https://github.com/Silencespainter/ikay#readme",
   "scripts": {
     "build": "webpack --mode=development",
     "watch": "webpack --mode=development --watch",
@@ -19,18 +19,18 @@
     "template",
     "setup"
   ],
-  "author": "WeAreAthlon <hello@weareathlon.com> (https://www.weareathlon.com)",
+  "author": "Nando Muñoz",
   "contributors": [
-    "Plamen Nikolov <me@pnikoloff.com> (https://pnikoloff.com)"
+    ""
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/WeAreAthlon/frontend-webpack-boilerplate.git"
+    "url": "git+ssh://git@github.com/Silencespainter/ikay.git"
   },
   "bugs": {
-    "url": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues",
-    "email": "plamen@athlonsofia.com"
+    "url": "https://github.com/Silencespainter/ikay/issues",
+    "email": ""
   },
   "engines": {
     "node": ">=10.13.0"
