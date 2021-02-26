@@ -1,5 +1,5 @@
 var tplHeader = function (properties) {
-  let txt = properties.header;
+  const txt = properties.header;
 
   const tplChoiceLang = `
 <!--CHOICE LANG -->
@@ -69,7 +69,13 @@ var tplHeader = function (properties) {
         <span class="text">${txt.share}</span>
       </a>
     </li>
-  </ul>
+    <li class="nav__list__item">
+    <a href="https://github.com/Silencespainter/ikay/" class="link">
+      <span class="text">Github Repo</span>
+    </a>
+  </li>
+  <ul>
+
 </nav>
     `;
 
