@@ -1,3 +1,6 @@
 {
-  "prettier.singleQuote": true
+  "prettier.singleQuote": false,
+  "prettier.useTabs": true,
+  "editor.fontFamily": "monospace",
+  "editor.formatOnSave": true
 }
