@@ -1,7 +1,7 @@
 /**
  * Detect browser by user agent
  * This function return a promise
- * @returns
+ * @returns {Promise}
  */
 
 const byUserAgent = () => {

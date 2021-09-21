@@ -7,6 +7,8 @@ import detectBattery from "./api/detectBattery.js";
 import detectGPU from "./api/detectGPU.js";
 import detectCPU from "./api/detectCPU.js";
 import detectBrowser from "./api/detectBrowser.js";
+import detectDevice from "./api/detectDevice.js";
+import detectTouchDevice from "./api/detectTouchDevice.js";
 
 function getApis() {
 	const noSupport = "noSupport";
@@ -16,16 +18,23 @@ function getApis() {
 		detectGPU(),
 		detectCPU(),
 		detectBrowser(),
+		detectDevice(),
+		detectTouchDevice(),
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
+			darkmode: window.matchMedia("(prefers-color-scheme: dark)").matches,
 			lang: navigator.language,
 			ram: values[0] || noSupport,
 			battery: values[1] || noSupport,
 			gpu: values[2] || noSupport,
 			cpu: values[3] || noSupport,
 			browser: values[4] || noSupport,
+			device: values[5] || noSupport,
+			touch: values[6],
 		};
+
+		window.your = fingerprint;
 		console.table(fingerprint);
 	});
 }
