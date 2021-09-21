@@ -50,6 +50,7 @@ const detectGPU = () => {
 
 	return new Promise((resolve, reject) => {
 		resolve(gpuObj);
+		reject(null);
 	});
 };
 

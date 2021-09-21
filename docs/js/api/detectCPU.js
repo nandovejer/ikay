@@ -15,6 +15,7 @@ const byNavigator = () => {
 const detectCPU = () => {
 	return new Promise((resolve, reject) => {
 		resolve(byNavigator());
+		reject(null);
 	});
 };
 

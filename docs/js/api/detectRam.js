@@ -8,6 +8,7 @@ const detectRam = () => {
 		resolve(
 			navigator.deviceMemory !== undefined ? navigator.deviceMemory : null
 		);
+		reject(null);
 	});
 };
 

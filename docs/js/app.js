@@ -6,6 +6,7 @@ import detectRam from "./api/detectRam.js";
 import detectBattery from "./api/detectBattery.js";
 import detectGPU from "./api/detectGPU.js";
 import detectCPU from "./api/detectCPU.js";
+import detectBrowser from "./api/detectBrowser.js";
 
 function getApis() {
 	const noSupport = "noSupport";
@@ -14,6 +15,7 @@ function getApis() {
 		detectBattery(),
 		detectGPU(),
 		detectCPU(),
+		detectBrowser(),
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
@@ -22,6 +24,7 @@ function getApis() {
 			battery: values[1] || noSupport,
 			gpu: values[2] || noSupport,
 			cpu: values[3] || noSupport,
+			browser: values[4] || noSupport,
 		};
 		console.table(fingerprint);
 	});
