@@ -32,7 +32,7 @@ const detectBattery = () => {
 			percentCharged: percentCharged(data),
 		};
 	};
-	const battery = navigator.getBattery().then((result) => callback(result));
+	const battery = navigator.getBattery().then((data) => callback(data));
 	return navigator.getBattery() !== null ? battery : null;
 };
 
