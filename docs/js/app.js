@@ -9,9 +9,9 @@ import detectRam from "./api/detectRam.js";
 import detectBattery from "./api/detectBattery.js";
 import detectGPU from "./api/detectGPU.js";
 import detectCPU from "./api/detectCPU.js";
-
 import detectTouchDevice from "./api/detectTouchDevice.js";
 import detectOrientation from "./api/detectOrientation.js";
+import detectPlugins from "./api/detectPlugins.js";
 
 function getApis() {
 	const noSupport = null;
@@ -25,6 +25,7 @@ function getApis() {
 		detectTouchDevice(),
 		detectOrientation(),
 		detectOS(),
+		detectPlugins(),
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
@@ -39,10 +40,11 @@ function getApis() {
 			touch: typeof values[6] === "boolean" ? values[6] : noSupport,
 			orientation: values[7] || noSupport,
 			os: values[8] || noSupport,
+			plugins: values[9] || noSupport,
 		};
 
 		window.your = fingerprint;
-		console.table(fingerprint);
+		console.log(fingerprint);
 	});
 }
 
