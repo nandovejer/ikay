@@ -4,7 +4,7 @@
  * @returns {Promise}
  */
 
-const isTouch = () => {
+export const isTouch = () => {
 	const touchEventConditions =
 		"ontouchstart" in window ||
 		(window.DocumentTouch && document instanceof DocumentTouch);
@@ -13,7 +13,7 @@ const isTouch = () => {
 	return touchEventConditions === true ? true : window.matchMedia(q).matches;
 };
 
-const detectTouchDevice = () => {
+export const detectTouchDevice = () => {
 	return new Promise((resolve, reject) => {
 		resolve(isTouch());
 		reject(null);

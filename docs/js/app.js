@@ -11,7 +11,7 @@ import detectDevice from "./api/detectDevice.js";
 import detectTouchDevice from "./api/detectTouchDevice.js";
 
 function getApis() {
-	const noSupport = "noSupport";
+	const noSupport = null;
 	const allThePromisesWeMade = [
 		detectRam(),
 		detectBattery(),
@@ -31,7 +31,7 @@ function getApis() {
 			cpu: values[3] || noSupport,
 			browser: values[4] || noSupport,
 			device: values[5] || noSupport,
-			touch: values[6],
+			touch: typeof values[6] === "boolean" ? values[6] : noSupport,
 		};
 
 		window.your = fingerprint;

@@ -1,17 +1,10 @@
 /**
  * Detect Device by user agent
  * This function return a promise
- * @returns {promise}
+ * @returns {promise} mobileAndroid || tabletAndroid || ipad || iphone || laptopWin || laptopMac || tv || unknownDevice
  */
 
-const isTouch = () => {
-	const touchEventConditions =
-		"ontouchstart" in window ||
-		(window.DocumentTouch && document instanceof DocumentTouch);
-	const prefixes = ["", "-webkit-", "-moz-", "-o-", "-ms-", ""];
-	const q = ["(", prefixes.join("touch-enabled),("), "heartz", ")"].join("");
-	return touchEventConditions === true ? true : window.matchMedia(q).matches;
-};
+import { isTouch } from "../api/detectTouchDevice.js";
 
 const byUserAgent = () => {
 	let device;
