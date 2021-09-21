@@ -8,14 +8,20 @@ export const detect = () => {
 	let isLandscape =
 		window.matchMedia("screen and (orientation: landscape)").matches &&
 		_isTouch;
-	if (isPortrait) {
-		return "portrait";
-	} else if (isLandscape) {
-		return "landscape";
-	} else if (!isPortrait && !isLandscape) {
-		return "noRevolving";
-	} else {
-		return null;
+
+	switch (true) {
+		case isPortrait:
+			return "portrait";
+			break;
+		case isLandscape:
+			return "landscape";
+			break;
+		case !isPortrait && !isLandscape:
+			return "noRevolving";
+			break;
+		default:
+			return null;
+			break;
 	}
 };
 export const detectOrientation = () => {

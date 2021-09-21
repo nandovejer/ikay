@@ -6,7 +6,12 @@
 
 import { isTouch } from "../api/detectTouchDevice.js";
 
-const byUserAgent = () => {
+export const byParser = () => {
+	const parser = new UAParser().getDevice();
+	return parser;
+};
+
+export const byUserAgent = () => {
 	let device;
 	let _isTouch = isTouch();
 	const userAgent = navigator.userAgent.toLocaleLowerCase();
@@ -42,9 +47,12 @@ const byUserAgent = () => {
 	}
 	return device;
 };
-const detectDevice = () => {
+export const detectDevice = () => {
 	return new Promise((resolve, reject) => {
-		resolve(byUserAgent());
+		resolve({
+			default: byUserAgent(),
+			library: byParser(),
+		});
 		reject(null);
 	});
 };

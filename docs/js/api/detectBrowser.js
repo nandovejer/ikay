@@ -4,7 +4,12 @@
  * @returns {Promise}
  */
 
-const byUserAgent = () => {
+export const byParser = () => {
+	const parser = new UAParser().getBrowser();
+	return parser;
+};
+
+export const byUserAgent = () => {
 	let result;
 	const userAgent = navigator.userAgent.toLocaleLowerCase();
 	const os = navigator.platform.toLocaleLowerCase();
@@ -71,7 +76,10 @@ const byUserAgent = () => {
 };
 const detectBrowser = () => {
 	return new Promise((resolve, reject) => {
-		resolve(byUserAgent());
+		resolve({
+			default: byUserAgent(),
+			library: byParser(),
+		});
 		reject(null);
 	});
 };

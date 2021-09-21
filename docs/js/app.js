@@ -1,13 +1,15 @@
 // APIS:
-// By External Library
+// By Library Parser
+import detectOS from "./api/detectOS.js";
+import detectDevice from "./api/detectDevice.js";
+import detectBrowser from "./api/detectBrowser.js";
 
 // By Web
 import detectRam from "./api/detectRam.js";
 import detectBattery from "./api/detectBattery.js";
 import detectGPU from "./api/detectGPU.js";
 import detectCPU from "./api/detectCPU.js";
-import detectBrowser from "./api/detectBrowser.js";
-import detectDevice from "./api/detectDevice.js";
+
 import detectTouchDevice from "./api/detectTouchDevice.js";
 import detectOrientation from "./api/detectOrientation.js";
 
@@ -22,6 +24,7 @@ function getApis() {
 		detectDevice(),
 		detectTouchDevice(),
 		detectOrientation(),
+		detectOS(),
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
@@ -35,6 +38,7 @@ function getApis() {
 			device: values[5] || noSupport,
 			touch: typeof values[6] === "boolean" ? values[6] : noSupport,
 			orientation: values[7] || noSupport,
+			os: values[8] || noSupport,
 		};
 
 		window.your = fingerprint;
