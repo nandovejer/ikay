@@ -1,4 +1,5 @@
 // APIS:
+
 // By Library Parser
 import detectOS from "./api/detectOS.js";
 import detectDevice from "./api/detectDevice.js";
@@ -12,6 +13,8 @@ import detectCPU from "./api/detectCPU.js";
 import detectTouchDevice from "./api/detectTouchDevice.js";
 import detectOrientation from "./api/detectOrientation.js";
 import detectPlugins from "./api/detectPlugins.js";
+import detectSpeed from "./api/detectSpeed.js";
+import detectDate from "./api/detectDate.js";
 
 function getApis() {
 	const noSupport = null;
@@ -26,6 +29,8 @@ function getApis() {
 		detectOrientation(),
 		detectOS(),
 		detectPlugins(),
+		detectSpeed(),
+		detectDate(),
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
@@ -45,9 +50,12 @@ function getApis() {
 			orientation: values[7] || noSupport,
 			os: values[8] || noSupport,
 			plugins: values[9] || noSupport,
+			speed: values[10] || noSupport,
+			date: values[11] || noSupport,
 		};
 
 		window.your = fingerprint;
+		console.table(fingerprint.date);
 		console.log(fingerprint);
 	});
 }
