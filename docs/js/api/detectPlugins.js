@@ -5,9 +5,10 @@ const allPlugins = () => {
 		navigator.plugins.length > 0
 	) {
 		let result = [];
-		navigator.plugins.forEach((element) => {
-			result.push(element.name);
-		});
+		const plugins = navigator.plugins;
+		for (let i = 0; i < plugins.length; i++) {
+			result.push(plugins[i].name);
+		}
 		return result;
 	}
 };
