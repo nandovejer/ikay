@@ -29,6 +29,10 @@ function getApis() {
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
+			screen: {
+				px: `${screen.width}x${screen.height}`,
+				bitsPixel: window.screen.colorDepth,
+			},
 			darkmode: window.matchMedia("(prefers-color-scheme: dark)").matches,
 			lang: navigator.language,
 			ram: values[0] || noSupport,
