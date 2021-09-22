@@ -19,8 +19,10 @@ import detectPlugins from "./api/detectPlugins.js";
 import detectSpeed from "./api/detectSpeed.js";
 import detectDate from "./api/detectDate.js";
 import detectLogged from "./api/detectLogged.js";
+import detectGyroscope from "./api/detectGyroscope.js";
 
 // let detectLocation = () => null;
+// let detectLogged = () => null;
 
 function getApis() {
 	const noSupport = null;
@@ -42,6 +44,7 @@ function getApis() {
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
+			compass: noSupport,
 			previousPage: document.referrer,
 			screen: {
 				px: `${screen.width}x${screen.height}`,
@@ -67,9 +70,11 @@ function getApis() {
 
 		window.your = fingerprint;
 		console.log(fingerprint);
+		//////
 	});
 }
 
 document.addEventListener("DOMContentLoaded", () => {
 	getApis();
+	detectGyroscope();
 });
