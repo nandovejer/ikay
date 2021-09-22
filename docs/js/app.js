@@ -1,5 +1,8 @@
 // APIS:
 
+// By external service https://ipapi.co
+import detectLocation from "./api/detectLocation.js";
+
 // By Library Parser
 import detectOS from "./api/detectOS.js";
 import detectDevice from "./api/detectDevice.js";
@@ -31,6 +34,7 @@ function getApis() {
 		detectPlugins(),
 		detectSpeed(),
 		detectDate(),
+		detectLocation(),
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
@@ -52,10 +56,11 @@ function getApis() {
 			plugins: values[9] || noSupport,
 			speed: values[10] || noSupport,
 			date: values[11] || noSupport,
+			location: values[12] || noSupport,
 		};
 
 		window.your = fingerprint;
-		console.table(fingerprint.date);
+		console.table(fingerprint.location);
 		console.log(fingerprint);
 	});
 }
