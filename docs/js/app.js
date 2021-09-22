@@ -18,6 +18,9 @@ import detectOrientation from "./api/detectOrientation.js";
 import detectPlugins from "./api/detectPlugins.js";
 import detectSpeed from "./api/detectSpeed.js";
 import detectDate from "./api/detectDate.js";
+import detectLogged from "./api/detectLogged.js";
+
+// let detectLocation = () => null;
 
 function getApis() {
 	const noSupport = null;
@@ -35,9 +38,11 @@ function getApis() {
 		detectSpeed(),
 		detectDate(),
 		detectLocation(),
+		detectLogged(),
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
+			previousPage: document.referrer,
 			screen: {
 				px: `${screen.width}x${screen.height}`,
 				bitsPixel: window.screen.colorDepth,
@@ -57,10 +62,10 @@ function getApis() {
 			speed: values[10] || noSupport,
 			date: values[11] || noSupport,
 			location: values[12] || noSupport,
+			logged: values[13] || noSupport,
 		};
 
 		window.your = fingerprint;
-		console.table(fingerprint.location);
 		console.log(fingerprint);
 	});
 }
