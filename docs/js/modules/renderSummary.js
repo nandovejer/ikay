@@ -12,7 +12,6 @@ export const renderSummary = (data) => {
 		 * @param {object} data
 		 */
 		const isObjRender = (data) => {
-			console.log("isObjRender", data);
 			const mainTitle = data[0];
 			const value = data[1];
 			let tlpItems = "";
