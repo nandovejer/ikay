@@ -26,8 +26,7 @@ import detectGyroscope from "../api/detectGyroscope.js";
 // let detectLocation = () => null;
 // let detectLogged = () => null;
 
-export const getAPIs = () => {
-	const noSupport = null;
+export const getAPIs = (callback) => {
 	const allThePromisesWeMade = [
 		detectRam(),
 		detectBattery(),
@@ -46,7 +45,7 @@ export const getAPIs = () => {
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
-			compass: noSupport,
+			compass: null,
 			previousPage: document.referrer,
 			screen: {
 				px: `${screen.width}x${screen.height}`,
@@ -54,24 +53,25 @@ export const getAPIs = () => {
 			},
 			darkmode: window.matchMedia("(prefers-color-scheme: dark)").matches,
 			lang: navigator.language,
-			ram: values[0] || noSupport,
-			battery: values[1] || noSupport,
-			gpu: values[2] || noSupport,
-			cpu: values[3] || noSupport,
-			browser: values[4] || noSupport,
-			device: values[5] || noSupport,
-			touch: typeof values[6] === "boolean" ? values[6] : noSupport,
-			orientation: values[7] || noSupport,
-			os: values[8] || noSupport,
-			plugins: values[9] || noSupport,
-			speed: values[10] || noSupport,
-			date: values[11] || noSupport,
-			location: values[12] || noSupport,
-			logged: values[13] || noSupport,
+			ram: values[0] || null,
+			battery: values[1] || null,
+			gpu: values[2] || null,
+			cpu: values[3] || null,
+			browser: values[4] || null,
+			device: values[5] || null,
+			touch: typeof values[6] === "boolean" ? values[6] : null,
+			orientation: values[7] || null,
+			os: values[8] || null,
+			plugins: values[9] || null,
+			speed: values[10] || null,
+			date: values[11] || null,
+			location: values[12] || null,
+			logged: values[13] || null,
 		};
 
 		window.your = fingerprint;
 		console.log(fingerprint);
+		callback();
 		//////
 	});
 	detectGyroscope();
