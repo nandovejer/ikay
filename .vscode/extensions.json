@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "tabnine.tabnine-vscode",
+        "dbaeumer.vscode-eslint",
+        "bierner.markdown-preview-github-styles",
+        "ritwickdey.liveserver"
+    ]
+}
