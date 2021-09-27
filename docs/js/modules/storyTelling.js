@@ -1,4 +1,5 @@
 import urlMap from "./maps.js";
+import { eventBattery } from "../api/detectBattery.js";
 
 export const storyTelling = (data) => {
 	const scope = document.querySelector(".js-storyTelling");
@@ -6,6 +7,7 @@ export const storyTelling = (data) => {
 	const youAreHere = scope.querySelector(".js-youAreHere");
 	const youAreUsing = scope.querySelector(".js-youAreUsing");
 	const youBrowser = scope.querySelector(".js-youBrowser");
+	const youBattery = scope.querySelector(".js-youBattery");
 	const noSupport = `<span title="Good Luck, your browser respect your privacy" class="strikethrough">notFound</span>`;
 	// let urlMapGoogle =  window.your.location.latitude ? `https://maps.google.com/maps?q=${window.your.location.latitude},${window.your.location.longitude}` : null;
 	let urlMapGoogle = urlMap(
@@ -43,10 +45,62 @@ export const storyTelling = (data) => {
 			window.your.darkmode == true ? "enabled" : "disabled" || noSupport,
 		orientation: window.your.orientation || noSupport,
 		plugins: window.your.plugins || noSupport,
-		speed: window.your.speed || noSupport,
+		speed: window.your.speed.toUpperCase() || noSupport,
 		telco: window.your.location.org || noSupport,
+		battery: {
+			charging:
+				window.your.battery.charging === true
+					? "charging"
+					: window.your.battery.charging !== null
+					? "no charging"
+					: noSupport,
+			percentCharged:
+				window.your.battery.percentCharged !== null
+					? window.your.battery.percentCharged + "%"
+					: noSupport,
+			chargingHours:
+				window.your.battery.chargingHours !== null
+					? window.your.battery.chargingHours + " hours"
+					: noSupport,
+			dischargingHours:
+				window.your.battery.dischargingHours !== null
+					? window.your.battery.dischargingHours + " hours"
+					: noSupport,
+		},
 	};
 
+	const renderDinamicBattery = () => {
+		eventBattery({
+			chargingStatus: (value) => {
+				obj.battery.charging =
+					value === true ? "charging" : "no charging";
+				window.your.battery.charging = value;
+				console.log(value);
+				document.querySelector(".js-charging").innerHTML =
+					obj.battery.charging;
+			},
+			percentCharged: (value) => {
+				obj.battery.percentCharged = value + "%";
+				window.your.battery.percentCharged = value;
+				document.querySelector(".js-percentCharged").innerHTML =
+					obj.battery.percentCharged;
+			},
+			chargingHours: (value) => {
+				obj.battery.chargingHours = value + " Hours";
+				window.your.battery.chargingHours = value;
+				document.querySelector(".js-chargingHours").innerHTML =
+					obj.battery.chargingHours;
+			},
+			dischargingHours: (value) => {
+				obj.battery.dischargingHours = value + " Hours";
+				window.your.battery.dischargingHours = value;
+				document.querySelector(".js-dischargingHours").innerHTML =
+					obj.battery.dischargingHours;
+			},
+		});
+	};
+
+	// Render Time
 	youAreNow.innerHTML = `
 		Today is <strong title="date">${obj.date}</strong>, and you opened this site at <strong title="time">${obj.time}.</strong>, I know that your ip is <strong title="ip">${obj.ip}</strong>, (the IP is like the phone number of your internet's connection) and you come from the page <strong title="Previous Page">${obj.previousPage}</strong>.
 	`;
@@ -59,12 +113,16 @@ export const storyTelling = (data) => {
 	`;
 
 	youBrowser.innerHTML = `
-	 Your are using <strong title="browser Default">${obj.browserDefault}</strong>, specifically <strong title="browser name">${obj.browserName}</strong>. I see that you have de <strong title="dark mode">Dark Mode ${obj.darkmode}</strong>. The orientation of the <strong title="device name">${obj.device}</strong> is <strong title="orientation">${obj.orientation}</strong> with this list of plugins installed:  <strong title="plugins names">${obj.plugins}</strong> a connection speed of <strong title="speed">${obj.speed}</strong> and your company of internet  is <strong title="telco">${obj.telco}</strong>.
+	 Your are using <strong title="browser Default">${obj.browserDefault}</strong>, specifically <strong title="browser name">${obj.browserName}</strong>. I see that you have de <strong title="dark mode">Dark Mode ${obj.darkmode}</strong>. The orientation of the <strong title="device name">${obj.device}</strong> is <strong title="orientation">${obj.orientation}</strong> with this list of plugins installed in your browser:  <strong title="plugins names">${obj.plugins}</strong>. A connection speed of <strong title="speed">${obj.speed}</strong> and your internet provider company is <strong title="telco">${obj.telco}</strong>.
 	`;
 
-	const batteryRenderText = () => {};
+	youBattery.innerHTML = `The battery of your device is <strong class ="js-charging" title="status battery">${obj.battery.charging}</strong> with a level of <strong class ="js-percentCharged" title="percent battery">${obj.battery.percentCharged}</strong>, may be the charging time is <strong class ="js-chargingHours" title="charging Time battery">${obj.battery.chargingHours}</strong> and the discharging Time <strong class ="js-dischargingTime" title="discharging Time battery">${obj.battery.dischargingHours}</strong>.`;
 
-	batteryRenderText();
+	renderDinamicBattery();
 };
 
 export default storyTelling;
+charging: true;
+chargingHours: 0;
+dischargingHours: Infinity;
+percentCharged: 100;
