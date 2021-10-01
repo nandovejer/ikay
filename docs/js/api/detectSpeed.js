@@ -19,7 +19,6 @@ export const speedNative = () => {
 export const detectSpeed = () => {
 	return new Promise((resolve, reject) => {
 		resolve(speedNative());
-		reject(null);
 	});
 };
 

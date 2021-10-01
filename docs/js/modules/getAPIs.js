@@ -59,7 +59,7 @@ export const getAPIs = (callback) => {
 			orientation: values[7] || null,
 			os: values[8] || null,
 			plugins: values[9] || null,
-			speed: values[10] || null,
+			// speed: values[10] || null,
 			date: values[11] || null,
 			location: values[12] || null,
 			logged: values[13] || null,
