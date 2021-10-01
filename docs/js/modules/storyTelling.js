@@ -46,24 +46,29 @@ export const storyTelling = (data) => {
 			window.your.darkmode == true ? "enabled" : "disabled" || noSupport,
 		orientation: window.your.orientation || noSupport,
 		plugins: window.your.plugins || noSupport,
-		speed: window.your.speed.toUpperCase() || noSupport,
+		speed: window.your.speed || noSupport,
 		telco: window.your.location.org || noSupport,
 		battery: {
 			charging:
+				window.your.battery !== null &&
 				window.your.battery.charging === true
 					? "charging"
-					: window.your.battery.charging !== null
+					: window.your.battery !== null &&
+					  window.your.battery.charging !== null
 					? "no charging"
 					: noSupport,
 			percentCharged:
+				window.your.battery !== null &&
 				window.your.battery.percentCharged !== null
 					? window.your.battery.percentCharged + "%"
 					: noSupport,
 			chargingHours:
+				window.your.battery !== null &&
 				window.your.battery.chargingHours !== null
 					? window.your.battery.chargingHours + " hours"
 					: noSupport,
 			dischargingHours:
+				window.your.battery !== null &&
 				window.your.battery.dischargingHours !== null
 					? window.your.battery.dischargingHours + " hours"
 					: noSupport,
