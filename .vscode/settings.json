@@ -2,5 +2,6 @@
   "prettier.singleQuote": false,
   "prettier.useTabs": true,
   "editor.fontFamily": "monospace",
-  "editor.formatOnSave": trues
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Visual Studio Light"
 }

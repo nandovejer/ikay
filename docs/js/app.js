@@ -1,7 +1,6 @@
 import getApis from "./modules/getAPIs.js";
 import storyTelling from "./modules/storyTelling.js";
 
-
 /**
  * INIT
  */
@@ -10,9 +9,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	window.your = {};
 	getApis(() => {
 		storyTelling();
-
-
-
 	});
 });
 

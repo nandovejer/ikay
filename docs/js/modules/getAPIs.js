@@ -23,9 +23,6 @@ import detectDate from "../api/detectDate.js";
 import detectLogged from "../api/detectLogged.js";
 import detectGyroscope from "../api/detectGyroscope.js";
 
-// let detectLocation = () => null;
-// let detectLogged = () => null;
-
 export const getAPIs = (callback) => {
 	const allThePromisesWeMade = [
 		detectRam(),
@@ -45,7 +42,6 @@ export const getAPIs = (callback) => {
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
-			compass: null,
 			previousPage: document.referrer,
 			screen: {
 				px: `${screen.width}x${screen.height}`,
@@ -70,11 +66,12 @@ export const getAPIs = (callback) => {
 		};
 
 		window.your = fingerprint;
-		console.log(fingerprint);
+		detectGyroscope();
+		console.log("fingerprint: ", fingerprint);
+		console.log("detectGyroscope: ", window.your.compass);
 		callback();
 		//////
 	});
-	detectGyroscope();
 };
 
 export default getAPIs;

@@ -8,6 +8,7 @@ export const storyTelling = (data) => {
 	const youAreUsing = scope.querySelector(".js-youAreUsing");
 	const youBrowser = scope.querySelector(".js-youBrowser");
 	const youBattery = scope.querySelector(".js-youBattery");
+	const youGyroscope = scope.querySelector(".js-youGyroscope");
 	const noSupport = `<span title="Good Luck, your browser respect your privacy" class="strikethrough">notFound</span>`;
 	// let urlMapGoogle =  window.your.location.latitude ? `https://maps.google.com/maps?q=${window.your.location.latitude},${window.your.location.longitude}` : null;
 	let urlMapGoogle = urlMap(
@@ -119,10 +120,8 @@ export const storyTelling = (data) => {
 	youBattery.innerHTML = `The battery of your device is <strong class ="js-charging" title="status battery">${obj.battery.charging}</strong> with a level of <strong class ="js-percentCharged" title="percent battery">${obj.battery.percentCharged}</strong>, may be the charging time is <strong class ="js-chargingHours" title="charging Time battery">${obj.battery.chargingHours}</strong> and the discharging Time <strong class ="js-dischargingTime" title="discharging Time battery">${obj.battery.dischargingHours}</strong>.`;
 
 	renderDinamicBattery();
+
+	youGyroscope.innerHTML = `Almost all mobile devices like yours have sensors called gyros. For example, these can be used to make your compass application work and can also be used to know if you have the device _ your hands / _A stationary surface like a table`;
 };
 
 export default storyTelling;
-charging: true;
-chargingHours: 0;
-dischargingHours: Infinity;
-percentCharged: 100;
