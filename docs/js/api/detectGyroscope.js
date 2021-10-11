@@ -5,17 +5,25 @@ export const getDevicemotion = (event) => {
 		aZ: Math.round(event.accelerationIncludingGravity.z) || null, // Result is -10 to 10
 		aX: Math.round(event.accelerationIncludingGravity.x) || null, // Result is -10 to 10
 	};
+
+	window.your.compass.ay = data.aY;
+	window.your.compass.aX = data.aX;
+	window.your.compass.aZ = data.aZ;
 	gyroCallback(data);
 };
 
 export const getDeviceorientation = (event) => {
 	data = {
-		orientation: event.absolute || null,
 		alpha: Math.round(event.alpha) || null,
 		beta: Math.round(event.beta) || null,
 		gamma: Math.round(event.gamma) || null,
 		inYourHands: !(Math.abs(event.beta) + Math.abs(event.gamma) < 1.8),
 	};
+
+	window.your.compass.alpha = data.alpha;
+	window.your.compass.beta = data.beta;
+	window.your.compass.gamma = data.gamma;
+	window.your.compass.inYourHands = data.inYourHands;
 	gyroCallback(data);
 };
 
@@ -60,19 +68,13 @@ export const gameSquare = {
 	},
 };
 
-export const setWindowYourCompass = (obj) => {
-	window.your.compass = obj;
-	console.log("window.your.compass: ", window.your.compass);
-};
-
 // callback from Events Listeners
 export const gyroCallback = (gyro) => {
-	setWindowYourCompass(gyro);
 	// ...Add more here.
 };
 
 // Events Init
-export const detectGyroscope = () => {
+export const detectGyroscope = (options) => {
 	if (
 		window.DeviceMotionEvent !== undefined &&
 		window.DeviceMotionEvent !== null

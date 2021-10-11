@@ -21,6 +21,8 @@ import detectPlugins from "../api/detectPlugins.js";
 import detectSpeed from "../api/detectSpeed.js";
 import detectDate from "../api/detectDate.js";
 import detectLogged from "../api/detectLogged.js";
+
+import { setWindowBattery } from "../api/detectBattery.js";
 import detectGyroscope from "../api/detectGyroscope.js";
 
 export const getAPIs = (callback) => {
@@ -45,6 +47,8 @@ export const getAPIs = (callback) => {
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
+			compass: {},
+			battery: null,
 			previousPage: document.referrer,
 			screen: {
 				px: `${screen.width}x${screen.height}`,
@@ -69,7 +73,8 @@ export const getAPIs = (callback) => {
 		};
 
 		window.your = fingerprint;
-		detectGyroscope();
+		//detectGyroscope();
+		setWindowBattery();
 		console.log("fingerprint: ", fingerprint);
 		console.log("detectGyroscope: ", window.your.compass);
 		callback();

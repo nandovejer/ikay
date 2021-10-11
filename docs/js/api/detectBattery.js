@@ -55,11 +55,28 @@ export const eventBattery = (opt) => {
 
 			battery.ondischargingtimechange = () =>
 				opt.chargingHours(chargingTime(battery));
-				
+
 			battery.chargingtimechange = () =>
 				opt.dischargingHours(dischargingTime(battery));
 		});
 	}
+};
+
+export const setWindowBattery = () => {
+	eventBattery({
+		chargingStatus: (value) => {
+			window.your.battery.charging = value;
+		},
+		percentCharged: (value) => {
+			window.your.battery.percentCharged = value;
+		},
+		chargingHours: (value) => {
+			window.your.battery.chargingHours = value;
+		},
+		dischargingHours: (value) => {
+			window.your.battery.dischargingHours = value;
+		},
+	});
 };
 
 export default detectBattery;

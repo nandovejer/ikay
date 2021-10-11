@@ -75,6 +75,29 @@ export const storyTelling = (data) => {
 		},
 	};
 
+	const renderDinamicDeviceInYourHands = () => {
+		document.querySelector(".js-inYourHands").innerHTML =
+			noSupport;
+		window.addEventListener(
+			"deviceorientation",
+			(event) => {
+				console.log(event);
+				const inYourHands = !(
+					Math.abs(event.beta) + Math.abs(event.gamma) <
+					1.8
+				);
+				const msg =
+					inYourHands === true
+						? " your hands"
+						: " a surface like a table";
+				document.querySelector(
+					".js-inYourHands"
+				).innerHTML = msg;
+			},
+			true
+		);
+	};
+
 	const renderDinamicBattery = () => {
 		eventBattery({
 			chargingStatus: (value) => {
@@ -126,7 +149,8 @@ export const storyTelling = (data) => {
 
 	renderDinamicBattery();
 
-	youGyroscope.innerHTML = `Almost all mobile devices like yours have sensors called gyros. For example, these can be used to make your compass application work and can also be used to know if you have the device _ your hands / _A stationary surface like a table`;
+	youGyroscope.innerHTML = `Almost all mobile devices like yours have sensors called gyros. For example, these can be used to make your compass application work and can also be used to know if you have the device <strong class ="js-inYourHands" title="Your device is or not in your hands"></strong>.`;
+	renderDinamicDeviceInYourHands();
 };
 
 export default storyTelling;
