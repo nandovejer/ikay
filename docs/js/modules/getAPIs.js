@@ -43,7 +43,7 @@ export const getAPIs = (callback) => {
 		detectSpeed(),
 		detectDate(),
 		detectLocation(),
-		detectLogged(),
+		//detectLogged(),
 	];
 	Promise.all(allThePromisesWeMade).then((values) => {
 		let fingerprint = {
