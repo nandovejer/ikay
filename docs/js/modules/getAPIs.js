@@ -69,7 +69,7 @@ export const getAPIs = (callback) => {
 			speed: notSupportValuePolicy(values[10]),
 			date: notSupportValuePolicy(values[11]),
 			location: notSupportValuePolicy(values[12]),
-			logged: notSupportValuePolicy(values[13]),
+			//logged: notSupportValuePolicy(values[13]),
 		};
 
 		window.your = fingerprint;
