@@ -16,6 +16,7 @@ export const storyTelling = (data) => {
 		window.your.location.longitude
 	);
 
+
 	let obj = {
 		previousPage: document.referrer || noSupport,
 		ip: window.your.location.ip || noSupport,
@@ -34,14 +35,14 @@ export const storyTelling = (data) => {
 		os: window.your.os.name + " " + window.your.os.version || noSupport,
 		screen:
 			window.your.screen.px +
-				"px " +
-				window.your.screen.bitsPixel +
-				"bitsPixel" || noSupport,
+			"px " +
+			window.your.screen.bitsPixel +
+			"bitsPixel" || noSupport,
 		browserDefault: window.your.browser.default || noSupport,
 		browserName:
 			window.your.browser.library.name +
-				" " +
-				window.your.browser.library.version || noSupport,
+			" " +
+			window.your.browser.library.version || noSupport,
 		darkmode:
 			window.your.darkmode == true ? "enabled" : "disabled" || noSupport,
 		orientation: window.your.orientation || noSupport,
@@ -51,25 +52,25 @@ export const storyTelling = (data) => {
 		battery: {
 			charging:
 				window.your.battery !== null &&
-				window.your.battery.charging === true
+					window.your.battery.charging === true
 					? "charging"
 					: window.your.battery !== null &&
-					  window.your.battery.charging !== null
-					? "no charging"
-					: noSupport,
+						window.your.battery.charging !== null
+						? "no charging"
+						: noSupport,
 			percentCharged:
 				window.your.battery !== null &&
-				window.your.battery.percentCharged !== null
+					window.your.battery.percentCharged !== null
 					? window.your.battery.percentCharged + "%"
 					: noSupport,
 			chargingHours:
 				window.your.battery !== null &&
-				window.your.battery.chargingHours !== null
+					window.your.battery.chargingHours !== null
 					? window.your.battery.chargingHours + " hours"
 					: noSupport,
 			dischargingHours:
 				window.your.battery !== null &&
-				window.your.battery.dischargingHours !== null
+					window.your.battery.dischargingHours !== null
 					? window.your.battery.dischargingHours + " hours"
 					: noSupport,
 		},

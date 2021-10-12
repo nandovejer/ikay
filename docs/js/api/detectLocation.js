@@ -2,8 +2,8 @@ export const fetchTime = (url) => {
 	return new Promise((resolve, reject) => {
 		fetch(url)
 			.then((response) => response.json())
-			.then((data) => resolve(data));
-		//.catch((error) => reject(new error(error)));
+			.then((data) => resolve(data))
+			.catch((error) => reject(console.error(error)));
 	});
 };
 
