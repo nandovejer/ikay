@@ -1,5 +1,5 @@
-import getApis from "./modules/getAPIs.js";
-import storyTelling from "./modules/storyTelling.js";
+import getApis from "./module/getAPIs.js";
+import storyTelling from "./module/storyTelling.js";
 
 /**
  * INIT
