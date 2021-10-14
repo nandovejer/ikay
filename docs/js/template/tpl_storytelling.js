@@ -1,38 +1,59 @@
 import { urlMap } from "../module/maps.js";
 
-export const noSupport = `<span title="Good Luck, your browser respect your privacy" class="strikethrough">notFound</span>`;
+//export const noSupport = `<span title="Good Luck, your browser respect your privacy" class="strikethrough">notFound</span>`;
 
 export const tpl_storytelling = (lang) => {
-	console.log(urlMap(window.your.location.latitude, window.your.location.longitude));
+	const translate = {
+		en: {
+			enabled: "enabled",
+			disabled: "disabled",
+			charging: "charging",
+			noCharging: "no charging",
+			hours: "hours",
+			infinity: "infinity",
+			noSupport: `<span title="Good Luck, your browser respect your privacy" class="strikethrough">notFound</span>`,
+		},
+		es: {
+			enabled: "activado",
+			disabled: "desactivado",
+			charging: "cargando",
+			noCharging: "no cargando",
+			hours: "horas",
+			infinity: "infinito",
+			noSupport: `<span title="Enhorabuena, tu navegador respeta tu privacidad" class="strikethrough">dato no encontrado</span>`,
+		},
+	};
+	const infinityOrHours = (value) => (value = value == Infinity ? translate[lang].infinity : value + " " + translate[lang].hours);
+
 	let obj = {
 		urlMapGoogle: urlMap(window.your.location.latitude, window.your.location.longitude),
-		previousPage: document.referrer || noSupport,
-		ip: window.your.location.ip || noSupport,
-		country: window.your.location.country_name || noSupport,
-		city: window.your.location.city || noSupport,
-		date: window.your.date.long || noSupport,
-		time: window.your.date.time || noSupport,
-		device: (window.your.device.library.model ??= window.your.device.default || noSupport),
-		deviceBrand: window.your.device.library.vendor || noSupport,
-		deviceType: window.your.device.library.type || noSupport,
-		ram: window.your.ram || noSupport,
-		cores: window.your.cpu.cores || noSupport,
-		platform: window.your.cpu.platform || noSupport,
-		gpu: window.your.gpu.renderer || noSupport,
-		os: window.your.os.name + " " + window.your.os.version || noSupport,
-		screen: window.your.screen.px + "px " + window.your.screen.bitsPixel + "bitsPixel" || noSupport,
-		browserDefault: window.your.browser.default || noSupport,
-		browserName: window.your.browser.library.name + " " + window.your.browser.library.version || noSupport,
-		darkmode: window.your.darkmode == true ? "enabled" : "disabled" || noSupport,
-		orientation: window.your.orientation || noSupport,
-		plugins: window.your.plugins || noSupport,
-		speed: window.your.speed || noSupport,
-		telco: window.your.location.org || noSupport,
+		previousPage: document.referrer || translate[lang].noSupport,
+		ip: window.your.location.ip || translate[lang].noSupport,
+		country: window.your.location.country_name || translate[lang].noSupport,
+		city: window.your.location.city || translate[lang].noSupport,
+		date: window.your.date.long || translate[lang].noSupport,
+		time: window.your.date.time || translate[lang].noSupport,
+		device: (window.your.device.library.model ??= window.your.device.default || translate[lang].noSupport),
+		deviceBrand: window.your.device.library.vendor || translate[lang].noSupport,
+		deviceType: window.your.device.library.type || translate[lang].noSupport,
+		ram: window.your.ram || translate[lang].noSupport,
+		cores: window.your.cpu.cores || translate[lang].noSupport,
+		platform: window.your.cpu.platform || translate[lang].noSupport,
+		gpu: window.your.gpu.renderer || translate[lang].noSupport,
+		os: window.your.os.name + " " + window.your.os.version || translate[lang].noSupport,
+		screen: window.your.screen.px + "px " + window.your.screen.bitsPixel + "bitsPixel" || translate[lang].noSupport,
+		browserDefault: window.your.browser.default || translate[lang].noSupport,
+		browserName: window.your.browser.library.name + " " + window.your.browser.library.version || translate[lang].noSupport,
+		darkmode: window.your.darkmode == true ? translate[lang].enabled : translate[lang].disabled || translate[lang].noSupport,
+		orientation: window.your.orientation || translate[lang].noSupport,
+		plugins: window.your.plugins || translate[lang].noSupport,
+		speed: window.your.speed || translate[lang].noSupport,
+		telco: window.your.location.org || translate[lang].noSupport,
 		battery: {
-			charging: window.your.battery !== null && window.your.battery.charging === true ? "charging" : window.your.battery !== null && window.your.battery.charging !== null ? "no charging" : noSupport,
+			charging: window.your.battery !== null && window.your.battery.charging === true ? translate[lang].charging : window.your.battery !== null && window.your.battery.charging !== null ? translate[lang].noCharging : noSupport,
 			percentCharged: window.your.battery !== null && window.your.battery.percentCharged !== null ? window.your.battery.percentCharged + "%" : noSupport,
-			chargingHours: window.your.battery !== null && window.your.battery.chargingHours !== null ? window.your.battery.chargingHours + " hours" : noSupport,
-			dischargingHours: window.your.battery !== null && window.your.battery.dischargingHours !== null ? window.your.battery.dischargingHours + " hours" : noSupport,
+			chargingHours: window.your.battery !== null && window.your.battery.chargingHours !== null ? infinityOrHours(window.your.battery.chargingHours) : noSupport,
+			dischargingHours: window.your.battery !== null && window.your.battery.dischargingHours !== null ? infinityOrHours(window.your.battery.dischargingHours) : noSupport,
 		},
 	};
 

@@ -1,12 +1,11 @@
 import { eventBattery } from "../api/detectBattery.js";
-import { tpl_storytelling, noSupport } from "../template/tpl_storytelling.js";
+import { tpl_storytelling } from "../template/tpl_storytelling.js";
 
 export const storyTelling = () => {
 	const scope = document.querySelector(".js-storyTelling");
 	const youAreNow = scope.querySelector(".js-storyTelling-main");
 
 	const renderDinamicDeviceInYourHands = () => {
-		document.querySelector(".js-inYourHands").innerHTML = noSupport;
 		window.addEventListener(
 			"deviceorientation",
 			(event) => {
