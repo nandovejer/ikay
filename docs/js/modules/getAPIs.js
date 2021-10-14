@@ -26,8 +26,7 @@ import { setWindowBattery } from "../api/detectBattery.js";
 import detectGyroscope from "../api/detectGyroscope.js";
 
 export const getAPIs = (callback) => {
-	const notSupportValuePolicy = (value) =>
-		value !== undefined && value !== null ? value : null;
+	const notSupportValuePolicy = (value) => (value !== undefined && value !== null ? value : null);
 
 	const allThePromisesWeMade = [
 		detectRam(),
@@ -73,10 +72,9 @@ export const getAPIs = (callback) => {
 		};
 
 		window.your = fingerprint;
-		//detectGyroscope();
+		detectGyroscope();
 		setWindowBattery();
 		console.log("fingerprint: ", fingerprint);
-		console.log("detectGyroscope: ", window.your.compass);
 		callback();
 		//////
 	});

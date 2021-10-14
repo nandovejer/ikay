@@ -1,4 +1,39 @@
-export const tpl_storytelling = (lang, obj) => {
+export const noSupport = `<span title="Good Luck, your browser respect your privacy" class="strikethrough">notFound</span>`;
+
+export const tpl_storytelling = (lang, data) => {
+	let obj = {
+		urlMapGoogle: noSupport,
+		previousPage: noSupport,
+		ip: noSupport,
+		country: noSupport,
+		city: noSupport,
+		date: noSupport,
+		time: noSupport,
+		device: noSupport,
+		deviceBrand: noSupport,
+		deviceType: noSupport,
+		ram: noSupport,
+		cores: noSupport,
+		platform: noSupport,
+		gpu: noSupport,
+		os: noSupport,
+		screen: noSupport,
+		browserDefault: noSupport,
+		browserName: noSupport,
+		darkmode: noSupport,
+		orientation: noSupport,
+		plugins: noSupport,
+		speed: noSupport,
+		telco: noSupport,
+		battery: {
+			charging: noSupport,
+			percentCharged: noSupport,
+			chargingHours: noSupport,
+			dischargingHours: noSupport,
+		},
+	};
+	obj = data || obj;
+
 	switch (true) {
 		case lang === "en":
 			return `
