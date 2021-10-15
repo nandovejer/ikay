@@ -1,28 +1,29 @@
 import { urlMap } from "../module/maps.js";
 
-//export const noSupport = `<span title="Good Luck, your browser respect your privacy" class="strikethrough">notFound</span>`;
+export const translate = {
+	en: {
+		enabled: "enabled",
+		disabled: "disabled",
+		charging: "charging",
+		noCharging: "no charging",
+		hours: "hours",
+		infinity: "infinity",
+		noSupport: `<span title="Good Luck, your browser respect your privacy" class="strikethrough">notFound</span>`,
+		title: "Hi, I'm your browser",
+	},
+	es: {
+		enabled: "activado",
+		disabled: "desactivado",
+		charging: "cargando",
+		noCharging: "no cargando",
+		hours: "horas",
+		infinity: "infinito",
+		noSupport: `<span title="Enhorabuena, tu navegador respeta tu privacidad" class="strikethrough">dato no encontrado</span>`,
+		title: "Hola, soy tu navegador",
+	},
+};
 
 export const tpl_storytelling = (lang) => {
-	const translate = {
-		en: {
-			enabled: "enabled",
-			disabled: "disabled",
-			charging: "charging",
-			noCharging: "no charging",
-			hours: "hours",
-			infinity: "infinity",
-			noSupport: `<span title="Good Luck, your browser respect your privacy" class="strikethrough">notFound</span>`,
-		},
-		es: {
-			enabled: "activado",
-			disabled: "desactivado",
-			charging: "cargando",
-			noCharging: "no cargando",
-			hours: "horas",
-			infinity: "infinito",
-			noSupport: `<span title="Enhorabuena, tu navegador respeta tu privacidad" class="strikethrough">dato no encontrado</span>`,
-		},
-	};
 	const infinityOrHours = (value) => (value = value == Infinity ? translate[lang].infinity : value + " " + translate[lang].hours);
 
 	let obj = {
@@ -85,7 +86,7 @@ export const tpl_storytelling = (lang) => {
 				
 				<p>En cuanto a la batería de tu dispositivo está <strong class ="js-charging" title="estado batería">${obj.battery.charging}</strong> a un nivel de <strong class ="js-percentCharged" title="porcentaje batería">${obj.battery.percentCharged}</strong>, puede que el tiempo de carga es <strong class ="js-chargingHours" title="charging Time battery">${obj.battery.chargingHours}</strong> y tiempo de descarga <strong class ="js-dischargingTime" title="discharging Time battery">${obj.battery.dischargingHours}</strong>.</p>
 				
-				<p>Casi todos los dispositivos móviles como el suyo tienen sensores llamados giroscopios. Por ejemplo, estos se pueden usar para hacer que su aplicación brújula funcione y también se pueden usar para saber si tiene el dispositivo <strong class ="js-inYourHands" title="en tus manos o o no"></strong>.</p>
+				<p>Casi todos los dispositivos móviles como el suyo tienen sensores llamados giroscopios. Por ejemplo, estos se pueden usar para hacer que su aplicación brújula funcione y también se pueden usar para saber si tiene el dispositivo <strong class ="js-inYourHands" title="en tus manos o o no">${translate[lang].noSupport}</strong>.</p>
 				`;
 			break;
 		default:

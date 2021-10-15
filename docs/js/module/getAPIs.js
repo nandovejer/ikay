@@ -72,8 +72,8 @@ export const getAPIs = (callback) => {
 		};
 
 		window.your = fingerprint;
-		detectGyroscope();
 		setWindowBattery();
+		detectGyroscope();
 		console.log("fingerprint: ", fingerprint);
 		callback();
 		//////

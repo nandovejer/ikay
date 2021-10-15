@@ -1,8 +1,9 @@
-import { eventBattery } from "../api/detectBattery.js";
-import { tpl_storytelling } from "../template/tpl_storytelling.js";
+import { eventBattery } from "../../api/detectBattery.js";
+import { tpl_storytelling, translate } from "../../template/tpl_storytelling.js";
 
-export const storyTelling = () => {
+export const renderStoryTelling = () => {
 	const scope = document.querySelector(".js-storyTelling");
+	const title = scope.querySelector(".js-storyTelling-title");
 	const youAreNow = scope.querySelector(".js-storyTelling-main");
 
 	const renderDinamicDeviceInYourHands = () => {
@@ -49,9 +50,10 @@ export const storyTelling = () => {
 	};
 
 	// INIT //
+	title.innerHTML = translate["es"].title;
 	youAreNow.innerHTML = tpl_storytelling("es");
 	renderDinamicBattery();
 	renderDinamicDeviceInYourHands();
 };
 
-export default storyTelling;
+export default renderStoryTelling;
