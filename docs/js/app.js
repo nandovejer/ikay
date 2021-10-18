@@ -2,6 +2,11 @@ import getApis from "./module/getAPIs.js";
 import renderStoryTelling from "./module/render/renderStoryTelling.js";
 import renderFooter from "./module/render/renderFooter.js";
 
+const renderDomByLang = () => {
+	renderStoryTelling();
+	renderFooter();
+};
+
 /**
  * INIT
  */
@@ -9,8 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	// The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
 	window.your = {};
 	getApis(() => {
-		renderStoryTelling();
-		renderFooter();
+		renderDomByLang();
 	});
 });
 

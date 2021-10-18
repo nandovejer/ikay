@@ -1,1 +1,26 @@
 /* VANILLA CSS */
+:root {
+	--color-font: black;
+	--color-bg: white;
+	--family-body: "Fira Code", monospace, sans-serif;
+	--size-font-default: 16px;
+}
+
+/* Reset */
+*,
+*:before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	color: var(--color-font);
+	background-color: var(--color-bg);
+	font-family: var(--family-body);
+	font-size: var(--size-font-default);
+}
+
+.strikethrough {
+	text-decoration: line-through;
+	cursor: help;
+}

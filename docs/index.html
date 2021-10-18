@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap" rel="stylesheet" />
-		<title>Tu navegador dice...</title>
-		<link rel="icon" href="favicon.ico" />
-		<link href="./css/app.css" rel="stylesheet" />
-	</head>
 
-	<body>
-		<style>
-			.strikethrough {
-				text-decoration: line-through;
-				cursor: help;
-			}
-		</style>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tu navegador dice...</title>
+	<meta name="description" content="Every relative with the fingerpring">
+	<meta name="theme-color" content="magenta">
+	<link rel="icon" href="favicon.ico" />
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&amp;display=swap">
+	<!-- 
+		SCRIPTS 
+		https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html 
+	-->
+	<script src="./js/api/vendor/ua-parser.min.js" defer></script>
+	<script type="module" src="./js/app.js" defer></script>
+</head>
 
-		<!-- <header>
-			<span>LOGO</span>
+<body>
+	<header>
+		<a href="#">
 			<h1>IKAY</h1>
 			<p>I Know About You. Your digital fingerpring</p>
-			<nav>
-				<ul>
-					<li><a href="#">One</a></li>
-					<li><a href="#">Two</a></li>
-					<li><a href="#">Three</a></li>
-					<li><a href="#">Four</a></li>
-					<li><a href="#">Five</a></li>
-				</ul>
-			</nav>
-		</header> -->
+		</a>
+		<nav>
+			<ul>
+				<li><a href="#storytelling">Storytelling</a></li>
+				<li><a href="#">Two</a></li>
+				<li><a href="#">Three</a></li>
+				<li><a href="#aboutme">About Me</a></li>
+				<li><a href="#statusofyourdata">Status of your data</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- STORYTELLING -->
+	<section id="storytelling" class="js-storyTelling">
+		<h2 class="js-storyTelling-title">Hi, I'm your browser</h2>
+		<main title="you Are Now" class="js-storyTelling-main">Sorry your device/browser don't support the web apis</main>
+		<div>No Support</div>
+	</section>
+	<!-- INFORMATION -->
+	
 
-		<section class="js-storyTelling">
-			<h2 class="js-storyTelling-title">Hi, I'm your browser</h2>
-			<main title="you Are Now" class="js-storyTelling-main">Sorry your device/browser don't support the web apis</main>
-		</section>
+	<!-- ABOUT ME -->
+	<section id="aboutme" class="js-aboutMe">
+		<h2 class="js-aboutMe-title">About me</h2>
+		<p>Frontend Senior, expert in the ecommerce with more than 7 years of experience on platforms like <a href="https: //www.sap.com/spain/acquired-brands/what-is-hybris.html"> Hybris </a> and <a href="https://www.salesforce.com/es/products/commerce-cloud/ecommerce/"> Salesforce Commerce Cloud </a>. Working developer and lead of a international Frontend team. Also passionate about design and UX.</p>
+		<p class="">You can contact me by <a href="https://github.com/Silencespainter">Github</a>,<a href="https://twitter.com/silencespainter">Twitter</a> or <a href="https://www.linkedin.com/in/silencespainter">Linkedin</a></p>
+	</section>
+	<!-- FOOTER -->
+	<footer id="statusofyourdata" class="js-footer">
+		<article class="js-footer-status">
+			<h3>Status of your data</h3>
+			<p>All data shown on this website is save only on your device, never will be stored in a external server, why? because I'm not interested in your data, I'm interested in your awareness.</p>
+			<p>However, I don't know if GitHub (the server hosting) or ipapi.co (external API that I use to determine your city, country and telephone company from your IP) generate any type of data storage similar to shown on this website. But hey, if you are not worried about sharing every dinner, moment, memory or feeling on Facebook, you will not be worried about the information (similar to this) or this aweasome web of free streaming movies recomended by your friend. :D irony :)</p>
+		</article>
+		<article class="class=" js-footer-legal">
+			<p>I want to thank <a href="https://github.com/RobinLinus">Robin Linus</a> and this projects about the privacy</p>
+			<p><a href="https://opensource.org/licenses/MIT">MIT LICENSE - https://opensource.org/licenses/MIT</a>.</p>
+		</article>
+	</footer>
+	<!-- 
+		STYLING  
+		https://csswizardry.com/2018/11/css-and-network-performance/
+	-->
+	<link href="./css/app.css" rel="stylesheet" />
+</body>
 
-		<footer class="js-footer">
-      <article class="js-footer-status">
-        <h3>Status of your data</h3>
-        <p>All data shown on this website is save only on your device, never will be stored in a external server, why? because I'm not interested in your data, I'm interested in your awareness.</p>
-        <p>However, I don't know if GitHub (the server hosting) or ipapi.co (external API that I use to determine your city, country and telephone company from your IP) generate any type of data storage similar to shown on this website. But hey, if you are not worried about sharing every dinner, moment, memory or feeling on Facebook, you will not be worried about the information (similar to this) or this aweasome web of free streaming movies recomended by your friend. :D irony :)</p>
-      </article>
-      <article class="class="js-footer-legal">
-          <p>I want to thank <a href="https://github.com/RobinLinus">Robin Linus</a> and this projects about the privacy</p>
-          <p><a href="https://opensource.org/licenses/MIT">MIT LICENSE - https://opensource.org/licenses/MIT</a>.</p>
-      </article>
-    </footer>
-
-		<script src="./js/api/vendor/ua-parser.min.js"></script>
-		<script type="module" src="./js/app.js"></script>
-	</body>
 </html>
