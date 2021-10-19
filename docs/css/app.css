@@ -1,26 +1,17 @@
-/* VANILLA CSS */
-:root {
-	--color-font: black;
-	--color-bg: white;
-	--family-body: "Fira Code", monospace, sans-serif;
-	--size-font-default: 16px;
-}
+@import "automatic/vars.css" screen;
+@import "automatic/reset.css" screen;
+@import "automatic/base.css" screen;
 
-/* Reset */
-*,
-*:before,
-*::after {
-	box-sizing: border-box;
-}
+/* Basic elements */
+/* @import "basic/btn.css" screen;
+@import "basic/alert.css" screen;
+@import "basic/fieldset.css" screen; */
 
-body {
-	color: var(--color-font);
-	background-color: var(--color-bg);
-	font-family: var(--family-body);
-	font-size: var(--size-font-default);
-}
+/* Complex elements */
+@import "complex/card.css" screen;
+@import "complex/category.css" screen;
 
-.strikethrough {
-	text-decoration: line-through;
-	cursor: help;
-}
+/* Vendor Elements */
+
+/* Themes */
+@import "theme/darkmode.css" screen;

@@ -1,0 +1,6 @@
+body {
+  background-color: var(--cai-backgroundColor);
+  color: var(--cai-textColor);
+  font-size: var(--cai-fontSize-m);
+  font-family: var(--cai-fontFamily-body);
+}

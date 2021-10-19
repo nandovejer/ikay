@@ -1,0 +1,70 @@
+/* 
+  VARIABLES
+  Naming: prefix + scope + propertyName + extraInfo (--cai-fontFamily-heading)
+  */
+:root {
+	/*  All Colors:  It is necessary to define a specific palette of colors, with a limited number of elements   */
+	--black: black;
+	--white: white;
+	--red: red;
+	--darkred: darkred;
+	--lightred: indianred;
+	--gray: gray;
+	--darkgray: #444;
+	--lightgray: #cacaca;
+
+	/* All Font Sizes  */
+	--cai-fontSize-xs: 8px;
+	--cai-fontSize-s: 12px;
+	--cai-fontSize-m: 16px;
+	--cai-fontSize-l: 24px;
+	--cai-fontSize-xl: 32px;
+
+	/* All Spaces  */
+	--cai-space-xs: 4px;
+	--cai-space-s: 12px;
+	--cai-space-m: 16px;
+	--cai-space-l: 24px;
+	--cai-space-xl: 32px;
+
+	/* All font families  */
+	--cai-fontFamily-primary: "Fire Code", sans-serif;
+	--cai-fontFamily-secondary: "Fire Code", sans-serif;
+
+	/* All others */
+	--cai-borderRadius: 4px;
+
+	/* FUNCTIONAL PURPOSE */
+
+	/* Functional colors */
+	--cai-color-info: lightblue;
+	--cai-color-info-dark: blue;
+	--cai-color-success: lightgreen;
+	--cai-color-success-dark: darkgreen;
+	--cai-color-warning: orange;
+	--cai-color-warning-dark: brown;
+
+	--cai-color-error: var(--red);
+	--cai-color-error-dark: var(--darkred);
+
+	--cai-color-disabled: var(--lightgray);
+	--cai-color-disabled-dark: var(--gray);
+
+	--cai-color-primary: blueviolet;
+	--cai-color-primaryDark: indigo;
+	--cai-color-primaryLight: violet;
+
+	--cai-color-secondary: green;
+	--cai-color-secondaryDark: darkgreen;
+	--cai-color-secondaryLight: yellowgreen;
+
+	--cai-color-white: var(--white);
+	--cai-color-black: var(--black);
+
+	/* Base */
+	--cai-backgroundColor: var(--cai-color-white);
+	--cai-textColor: var(--cai-color-primaryDark);
+	--cai-fontFamily-heading: var(--cai-fontFamily-primary);
+	--cai-fontFamily-body: var(--cai-fontFamily-secondary);
+	--cai-fontSize: var(--cai-fontSize-m);
+}

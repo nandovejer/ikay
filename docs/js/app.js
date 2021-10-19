@@ -1,10 +1,12 @@
 import getApis from "./module/getAPIs.js";
 import renderStoryTelling from "./module/render/renderStoryTelling.js";
 import renderFooter from "./module/render/renderFooter.js";
+import cardMoreInfo from "./complex/card.js";
 
 const renderDomByLang = () => {
 	renderStoryTelling();
 	renderFooter();
+	cardMoreInfo();
 };
 
 /**

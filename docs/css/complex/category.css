@@ -1,0 +1,38 @@
+.cai-category {
+	--category-title-color: black;
+	margin-bottom: 1em;
+	color: var(--category-title-color);
+}
+
+.cai-category .cai-category-header {
+	padding: 20px;
+}
+
+.cai-category .cai-category-header h2 {
+	font-size: 36px;
+}
+
+.cai-category--config,
+.cai-category--config * {
+	--category-title-color: orange;
+	--card-title-color: white;
+	--card-bg-color: orange;
+}
+.cai-category--timeAndSpace,
+.cai-category--timeAndSpace * {
+	--category-title-color: indianred;
+	--card-title-color: white;
+	--card-bg-color: indianred;
+}
+.cai-category--hardware,
+.cai-category--hardware * {
+	--category-title-color: green;
+	--card-title-color: white;
+	--card-bg-color: green;
+}
+.cai-category--connection,
+.cai-category--connection * {
+	--category-title-color: darkblue;
+	--card-title-color: white;
+	--card-bg-color: darkblue;
+}
