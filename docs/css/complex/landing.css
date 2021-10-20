@@ -3,6 +3,10 @@
 	padding: var(--cai-space-m);
 }
 
+.cai-landing.cai-landing--highlight {
+	background-color: var(--cai-color-secondary);
+}
+
 /* FOOTER OF THE SITE */
 .cai-landing.cai-landing--footer {
 	background-color: var(--cai-color-black);

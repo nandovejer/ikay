@@ -7,6 +7,9 @@
 .cai-category .cai-category-header {
 	padding: 20px;
 }
+.cai-category .cai-category-header h2 {
+	margin-bottom: 0;
+}
 
 .cai-category--config,
 .cai-category--config * {
@@ -31,4 +34,8 @@
 	--category-title-color: darkblue;
 	--card-title-color: white;
 	--card-bg-color: darkblue;
+}
+
+.cai-category .cai-card {
+	margin-bottom: var(--cai-space-m);
 }
