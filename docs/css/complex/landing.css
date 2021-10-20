@@ -1,0 +1,23 @@
+/* Contains the basic styles of a section||div with the paddings and other typography properties */
+.cai-landing {
+	padding: var(--cai-space-m);
+}
+
+/* FOOTER OF THE SITE */
+.cai-landing.cai-landing--footer {
+	background-color: var(--cai-color-black);
+	color: var(--cai-color-white);
+	padding-top: var(--cai-space-xl);
+	margin-bottom: 0;
+}
+.cai-landing.cai-landing--footer h3 {
+	margin-bottom: var(--cai-space-m);
+}
+
+.cai-landing.cai-landing--footer a {
+	color: var(--cai-color-white);
+}
+
+.cai-landing.cai-landing--footer #ikaycanvas {
+	background-color: var(--cai-color-black);
+}

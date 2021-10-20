@@ -1,15 +1,11 @@
 .cai-category {
 	--category-title-color: black;
-	margin-bottom: 1em;
+	margin-bottom: var(--cai-space-l);
 	color: var(--category-title-color);
 }
 
 .cai-category .cai-category-header {
 	padding: 20px;
-}
-
-.cai-category .cai-category-header h2 {
-	font-size: 36px;
 }
 
 .cai-category--config,

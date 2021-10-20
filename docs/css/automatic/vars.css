@@ -19,6 +19,8 @@
 	--cai-fontSize-m: 16px;
 	--cai-fontSize-l: 24px;
 	--cai-fontSize-xl: 32px;
+	--cai-fontSize-xxl: 36px;
+	--cai-fontSize-xxxl: 48px;
 
 	/* All Spaces  */
 	--cai-space-xs: 4px;
@@ -26,13 +28,15 @@
 	--cai-space-m: 16px;
 	--cai-space-l: 24px;
 	--cai-space-xl: 32px;
+	--cai-space-xxl: 36px;
+	--cai-space-xxxl: 42px;
 
 	/* All font families  */
 	--cai-fontFamily-primary: "Fire Code", sans-serif;
 	--cai-fontFamily-secondary: "Fire Code", sans-serif;
 
 	/* All others */
-	--cai-borderRadius: 4px;
+	--cai-borderRadius: 0;
 
 	/* FUNCTIONAL PURPOSE */
 
@@ -50,9 +54,9 @@
 	--cai-color-disabled: var(--lightgray);
 	--cai-color-disabled-dark: var(--gray);
 
-	--cai-color-primary: blueviolet;
-	--cai-color-primaryDark: indigo;
-	--cai-color-primaryLight: violet;
+	--cai-color-primary: blue;
+	--cai-color-primaryDark: darkblue;
+	--cai-color-primaryLight: lightblue;
 
 	--cai-color-secondary: green;
 	--cai-color-secondaryDark: darkgreen;
@@ -67,4 +71,5 @@
 	--cai-fontFamily-heading: var(--cai-fontFamily-primary);
 	--cai-fontFamily-body: var(--cai-fontFamily-secondary);
 	--cai-fontSize: var(--cai-fontSize-m);
+	--cai-outline-focus: 2px solid var(--cai-color-warning);
 }

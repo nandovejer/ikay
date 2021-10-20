@@ -1,0 +1,57 @@
+.cai-header {
+	background-color: var(--cai-color-primaryDark);
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: var(--cai-space-m);
+}
+.cai-header a {
+	text-decoration: none;
+	color: var(--cai-color-primaryLight);
+}
+.cai-header .cai-header-link {
+	width: 100%;
+}
+.cai-header .cai-header-title {
+	font-size: var(--cai-fontSize-xxxl);
+	line-height: 0;
+	height: var(--cai-fontSize-xxxl);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.cai-header .cai-header-title:before {
+	content: "" attr(title) "";
+	font-weight: normal;
+	letter-spacing: 8px;
+	font-size: var(--cai-fontSize-xs);
+	line-height: 0;
+	padding-top: 2px;
+	height: var(--cai-fontSize-s);
+	text-transform: uppercase;
+	background: red;
+	text-align: center;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	background-color: var(--cai-color-primaryDark);
+}
+
+.cai-header .cai-header-description {
+	margin-bottom: 0;
+	line-height: 1em;
+	font-size: var(--cai-fontSize-m);
+}
+
+.cai-header nav {
+	display: none;
+}

@@ -1,10 +1,7 @@
 /* Card */
 .cai-card {
-	--card-title-color: white;
-	--card-bg-color: indigo;
-	--card-space: 12px;
-	--card-spaceDouble: 24px;
-	--card-radius: 0;
+	--card-title-color: var(--cai-color-white);
+	--card-bg-color: var(--cai-color-black);
 	--card-outline-focus: 4px solid yellow;
 	--card-speed: 0.75s;
 	width: 100%;
@@ -14,15 +11,15 @@
 	color: var(--card-title-color);
 	display: flex;
 	flex-direction: column;
-	padding: var(--card-spaceDouble);
+	padding: var(--cai-space-l);
 	background-color: var(--card-bg-color);
-	border-radius: var(--card-radius);
+	border-radius: var(--cai-borderRadius);
 	position: relative;
 }
 
 .cai-card .cai-card-header .header-title,
 .cai-card .cai-card-header .header-value {
-	width: calc(100% - var(--card-spaceDouble));
+	width: calc(100% - var(--cai-space-l));
 }
 
 .cai-card .cai-card-header .header-title {
@@ -57,8 +54,8 @@
 	width: 24px;
 	border-radius: 100%;
 	position: absolute;
-	top: var(--card-spaceDouble);
-	right: var(--card-spaceDouble);
+	top: var(--cai-space-l);
+	right: var(--cai-space-l);
 	opacity: 0.5;
 	cursor: help;
 	display: flex;
@@ -79,7 +76,7 @@
 
 .cai-card .cai-card-main {
 	color: var(--card-bg-color);
-	padding: 0 var(--card-spaceDouble);
+	padding: 0 var(--cai-space-l);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -128,7 +125,7 @@
 .cai-card .cai-card-main .main-title {
 	font-weight: bold;
 	line-height: 2em;
-	padding-top: var(--card-space);
+	padding-top: var(--cai-space-s);
 }
 
 .cai-card .cai-card-main .main-body {
@@ -140,9 +137,9 @@
 }
 
 .cai-card .cai-card-main .main-footer {
-	padding-top: var(--card-space);
+	padding-top: var(--cai-space-s);
 	text-align: right;
-	padding-bottom: var(--card-space);
+	padding-bottom: var(--cai-space-s);
 }
 
 .cai-card .cai-card-main a {

@@ -18,10 +18,10 @@
 </head>
 
 <body>
-	<header>
-		<a href="#">
-			<h1>IKAY</h1>
-			<p>I Know About You. Your digital fingerpring</p>
+	<header class="cai-header">
+		<a class="cai-header-link" href="#">
+			<h1 class="cai-header-title" title="I Know About You">IKAY</h1>
+			<p class="cai-header-description">See your digital fingerpring </p>
 		</a>
 		<nav>
 			<ul>
@@ -33,8 +33,14 @@
 			</ul>
 		</nav>
 	</header>
+	<!-- About the Project -->
+	<section class="cai-landing">
+		<h2>What is this project</h2>
+		<p>IKAY is a tool that you can visualize, identify and become aware of your fingerprint in internet.</p>
+		<p> Digital fingerprint or shadow profile is the information collected on a remote computing device in order to identify you in internet. If you want to know more, you can read <a href="https://soynando.com/tu-navegador-sabe-sobre-ti-mas-de-lo-que-crees/"> my article on the subject </a> (Only in Spanish 🙁)</p>
+	</section>
 	<!-- STORYTELLING -->
-	<section id="storytelling" class="js-storyTelling">
+	<section id="storytelling" class="cai-landing js-storyTelling">
 		<h2 class="js-storyTelling-title">Hi, I'm your browser</h2>
 		<main title="you Are Now" class="js-storyTelling-main">Sorry your device/browser don't support the web apis</main>
 		<div>No Support</div>
@@ -307,13 +313,15 @@
 	<section> BATTERY (level, charging, charginHours, discountHours) </section>
 	<section> GYROS (ball game) </section>
 	<!-- ABOUT ME -->
-	<section id="aboutme" class="js-aboutMe">
+	<section id="aboutme" class="cai-landing js-aboutMe">
 		<h2 class="js-aboutMe-title">About me</h2>
 		<p>Frontend Senior, expert in the ecommerce with more than 7 years of experience on platforms like <a href="https: //www.sap.com/spain/acquired-brands/what-is-hybris.html"> Hybris </a> and <a href="https://www.salesforce.com/es/products/commerce-cloud/ecommerce/"> Salesforce Commerce Cloud </a>. Working developer and lead of a international Frontend team. Also passionate about design and UX.</p>
 		<p class="">You can contact me by <a href="https://github.com/Silencespainter">Github</a>,<a href="https://twitter.com/silencespainter">Twitter</a> or <a href="https://www.linkedin.com/in/silencespainter">Linkedin</a></p>
 	</section>
+	<!-- CANVAS IKAY -->
+	<span aria-hidden="true" id="canvasikay"></span>
 	<!-- FOOTER -->
-	<footer id="statusofyourdata" class="js-footer">
+	<footer id="statusofyourdata" class="cai-landing cai-landing--footer js-footer">
 		<article class="js-footer-status">
 			<h3>Status of your data</h3>
 			<p>All data shown on this website is save only on your device, never will be stored in a external server, why? because I'm not interested in your data, I'm interested in your awareness.</p>

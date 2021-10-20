@@ -1,6 +1,22 @@
 body {
-  background-color: var(--cai-backgroundColor);
-  color: var(--cai-textColor);
-  font-size: var(--cai-fontSize-m);
-  font-family: var(--cai-fontFamily-body);
+	background-color: var(--cai-backgroundColor);
+	color: var(--cai-textColor);
+	font-size: var(--cai-fontSize-m);
+	font-family: var(--cai-fontFamily-body);
+	width: 100vw;
+	height: 100vh;
+}
+p {
+	margin-bottom: 1em;
+	line-height: 1.5em;
+}
+
+h2 {
+	font-size: var(--cai-fontSize-xl);
+}
+h3 {
+	font-size: var(--cai-fontSize-l);
+}
+h4 {
+	font-size: var(--cai-fontSize-m);
 }
