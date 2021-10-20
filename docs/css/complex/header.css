@@ -1,6 +1,7 @@
 .cai-header {
 	background-color: var(--cai-color-primaryDark);
-	height: 100px;
+	color: var(--cai-color-secondaryLight);
+	height: 140px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,7 +10,7 @@
 }
 .cai-header a {
 	text-decoration: none;
-	color: var(--cai-color-primaryLight);
+	color: var(--cai-color-secondaryLight);
 }
 .cai-header .cai-header-link {
 	width: 100%;
@@ -48,8 +49,9 @@
 
 .cai-header .cai-header-description {
 	margin-bottom: 0;
-	line-height: 1em;
+	line-height: 1.25em;
 	font-size: var(--cai-fontSize-m);
+	font-weight: lighter;
 }
 
 .cai-header nav {

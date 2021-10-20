@@ -54,13 +54,13 @@
 	--cai-color-disabled: var(--lightgray);
 	--cai-color-disabled-dark: var(--gray);
 
-	--cai-color-primary: blue;
-	--cai-color-primaryDark: darkblue;
-	--cai-color-primaryLight: lightblue;
+	--cai-color-primary: #8a2be2;
+	--cai-color-primaryDark: #4f1d7e;
+	--cai-color-primaryLight: #a856f5;
 
-	--cai-color-secondary: green;
-	--cai-color-secondaryDark: darkgreen;
-	--cai-color-secondaryLight: yellowgreen;
+	--cai-color-secondary: #fefd00;
+	--cai-color-secondaryDark: #c2c200;
+	--cai-color-secondaryLight: #fbfb60;
 
 	--cai-color-white: var(--white);
 	--cai-color-black: var(--black);

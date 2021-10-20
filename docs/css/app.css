@@ -3,9 +3,7 @@
 @import "automatic/base.css" screen;
 
 /* Basic elements */
-/* @import "basic/btn.css" screen;
-@import "basic/alert.css" screen;
-@import "basic/fieldset.css" screen; */
+@import "basic/quote.css" screen;
 
 /* Complex elements */
 @import "complex/header.css" screen;

@@ -1,0 +1,6 @@
+.cai-quote {
+}
+.cai-quote.cai-quote--minimal {
+	font-size: 1.25em !important;
+	font-weight: bold;
+}

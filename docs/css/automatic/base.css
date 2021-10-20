@@ -11,6 +11,11 @@ p {
 	line-height: 1.5em;
 }
 
+a {
+	color: var(--cai-color-primaryDark);
+	font-weight: bold;
+}
+
 h2 {
 	font-size: var(--cai-fontSize-xl);
 }
