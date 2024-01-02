@@ -3,7 +3,7 @@ import { default as en } from "./en.json";
 import { default as es } from "./es.json";
 import { default as ar } from "./ar.json";
 // import saveStorage from "../js/modules/saveStorege";
-import detectLang from "../js/wepapi/detectLang";
+import detectLang from "../js/ikay/detectLang";
 
 // UPDATE LANGUAGES
 const properties = {
