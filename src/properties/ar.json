@@ -2,209 +2,207 @@
   "header": {
     "h1": "IKAY",
     "description": "لوحة معلومات حول بصمتك الرقمية",
-    "location": "Geolocalización",
-    "info": "Información General",
-    "software": "Software",
-    "hardware": "Hardware",
-    "connection": "Conexión",
-    "battery": "Batería",
-    "aboutme": "Sobre Mi",
-    "share": "Compartir"
+    "location": "التحديد الجغرافي",
+    "info": "معلومات عامة",
+    "software": "البرمجيات",
+    "hardware": "العتاد",
+    "connection": "الاتصال",
+    "battery": "البطارية",
+    "aboutme": "عني",
+    "share": "مشاركة"
   },
   "main": {
     "intro": {
-      "heading": "IKAY, tu huella digital",
-      "content1": "<p>Hola, soy <a href='https://soynando.com'>Nando Muñoz</a>, IKAY nace como herramienta para que puedas visualizar, identificar y gestionar tu huella digital</p>",
-      "content2": "<p>A continuación, te mostraré un panel de control con parte de la información que cedes a una web, cada vez que accedes a ella a través del navegador. Si quieres saber más,pásate a leer <a href='https://soynando.com/tu-navegador-sabe-sobre-ti-mas-de-lo-que-crees/'>mi artículo sobre el tema</a> (Sólo en español 🙁)</p>",
+      "heading": "IKAY, بصمتك الرقمية",
+      "content1": "<p>مرحبا، أنا <a href='https://soynando.com'>ناندو مونيوز</a>، تأتي IKAY كأداة لتمكنك من رؤية، تحديد وإدارة بصمتك الرقمية</p>",
+      "content2": "<p>فيما يلي، سأعرض لك لوحة تحكم تحتوي على جزء من المعلومات التي تقدمها لموقع ويب، كلما قمت بالدخول إليه عبر المتصفح. إذا كنت ترغب في معرفة المزيد، اقرأ <a href='https://soynando.com/tu-navegador-sabe-sobre-ti-mas-de-lo-que-crees/'>مقالتي حول هذا الموضوع</a> (بالإسبانية فقط 🙁)</p>",
       "content3": ""
     },
-    "cardmore": "Saber más sobre este dato",
-    "noSupport": "Su navegador no admite esta funcionalidad. Bueno para tu privacidad, puede ser: D"
+    "cardmore": "معرفة المزيد عن هذه البيانات",
+    "noSupport": "متصفحك لا يدعم هذه الوظيفة. جيد لخصوصيتك، قد يكون :D"
   },
   "aboutme": {
-    "heading": "Sobre Mi",
-    "content1": "<p> Frontend Senior enfocado en el área de ecommerce con más de 7 años de expriencia en plataformas como <a href='https://www.sap.com/spain/acquired-brands/what-is-hybris.html'>Hybris</a> y <a href='https://www.salesforce.com/es/products/commerce-cloud/ecommerce/'>Salesforce Commerce Cloud</a>. Ejerciendo labores de desarrollo y tareas de coordinación como lider de un equipo de Frontend internacional. Además apasionado en materia de diseño y UX.</p>",
-    "content2": "<p class=''>Puedes contactar conmigo vía <a href='https://github.com/Silencespainter'>Github</a>,<a href='https://twitter.com/silencespainter'>Twitter</a> o <a href='https://www.linkedin.com/in/silencespainter'>Linkedin</a></p>",
+    "heading": "عني",
+    "content1": "<p>أنا مطور واجهة أمامية متخصص في مجال التجارة الإلكترونية مع أكثر من 7 سنوات من الخبرة في منصات مثل <a href='https://www.sap.com/spain/acquired-brands/what-is-hybris.html'>Hybris</a> و <a href='https://www.salesforce.com/es/products/commerce-cloud/ecommerce/'>Salesforce Commerce Cloud</a>. أقوم بمهام التطوير وتنسيق العمل كقائد لفريق الواجهة الأمامية الدولي. بالإضافة إلى شغفي بمجال التصميم وتجربة المستخدم.</p>",
+    "content2": "<p class=''>يمكنك التواصل معي عبر <a href='https://github.com/Silencespainter'>Github</a>،<a href='https://twitter.com/silencespainter'>Twitter</a> أو <a href='https://www.linkedin.com/in/silencespainter'>Linkedin</a></p>",
     "content3": ""
   },
   "footer": {
-    "title": "Estado de tus datos",
-    "content1": "<p>Todos los datos que aparecen en esta web permanecen almacenados solamente en tu dispositivo, en ningún momento son envidos a ningún servidor externo, ¿por qué? porque no me interesan tus datos, me interesa tu concienciación.</p>",
-    "content2": "<p>No obstante, desconozco si GitHub (el servidor donde se aloja esta web) o ipapi.co (API externa que utilizo para determinar tu ciudad, país y compañía de telefonía a partir de tu IP) generan algún tipo almacenamiento de dato similar o ajeno al mostrado en esta web. Pero bueno, si no te preocupa compartir en facebook cada cena, momento, recuerdo o sentimiento, tampoco te preocupará la información (similar a esta) que almacenará sobre ti esa web maravillosa donde te han dicho que ves peliculas online de pagp, pero gratis:D Pérmiteme un poco de ironía :)</p>",
-    "thanks": "<p>Quiero dar las gracias a <a href='https://github.com/RobinLinus'>Robin Linus</a> por su inspirtación y a <a href='https://www.flaticon. com'>Flaicons</a> por aportar sus iconos</p>",
-    "license": "<p><a href='https://opensource.org/licenses/MIT'>LICENCIA MIT - https://opensource.org/licenses/MIT</a>.</p>"
+    "title": "حالة بياناتك",
+    "content1": "<p>جميع البيانات المعروضة على هذا الموقع مخزنة فقط على جهازك، ولا يتم إرسالها في أي وقت إلى أي خادم خارجي، لماذا؟ لأنني لا أهتم ببياناتك، أهتم بوعيك.</p>",
+    "content2": "<p>مع ذلك، لا أعلم إذا كان GitHub (الخادم الذي يستضيف هذا الموقع) أو ipapi.co (API خارجي أستخدمه لتحديد مدينتك، دولتك وشركة الاتصالات الخاصة بك من خلال عنوان IP الخاص بك) يقومان بأي نوع من تخزين البيانات المشابهة أو المختلفة عن المعروضة في هذا الموقع. ولكن، إذا لم يكن يقلقك مشاركة كل عشاء، لحظة، ذكرى أو شعور على فيسبوك، فلن يقلقك أيضًا المعلومات (المشابهة لهذه) التي ستخزنها عنك تلك المواقع الرائعة حيث يخبرونك أنه يمكنك مشاهدة الأفلام عبر الإنترنت مجانًا. دعني أسخر قليلاً :)</p>",
+    "thanks": "<p>أود أن أشكر <a href='https://github.com/RobinLinus'>روبن لينوس</a> على إلهامه و<a href='https://www.flaticon.com'>Flaicons</a> على تقديمهم للأيقونات</p>",
+    "license": "<p><a href='https://opensource.org/licenses/MIT'>رخصة MIT - https://opensource.org/licenses/MIT</a>.</p>"
   },
   "global": {
-    "spanish": "español",
-    "english": "inglés",
-    "arabic": "árabe",
-    "contact": "Contacto",
-    "shareSocialMedia": "Compartir en RRSS",
-    "share": "Compartir",
-    "shareIn": "Comparte en {0}"
+    "spanish": "الإسبانية",
+    "english": "الإنجليزية",
+    "arabic": "العربية",
+    "contact": "التواصل",
+    "shareSocialMedia": "المشاركة على وسائل التواصل الاجتماعي",
+    "share": "مشاركة",
+    "shareIn": "شارك في {0}"
   },
   "location": {
-    "title": "Geolocalización",
+    "title": "التحديد الجغرافي",
     "modalinfo": {
-      "title": "Geolocalización",
-      "description": "<p>Con la geolocalización IP es posible realizar un seguimiento de la ubicación de los visitantes, utilizando la base de datos de geolocalización IP, o una API. Los visitantes podrán ser geolocalizados en cualquier ciudad, región o país.</p>",
-      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Geolocalizaci%C3%B3n#Geolocalizaci%C3%B3n_de_los_visitantes_en_Internet'>Más información sobre Geolocalización</a>"
+      "title": "التحديد الجغرافي",
+      "description": "<p>من خلال تحديد الموقع الجغرافي لعنوان IP، يمكن تتبع موقع الزائرين باستخدام قاعدة بيانات الموقع الجغرافي لعنوان IP، أو باستخدام API. يمكن تحديد موقع الزائرين في أي مدينة، منطقة أو دولة.</p>",
+      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Geolocalizaci%C3%B3n#Geolocalizaci%C3%B3n_de_los_visitantes_en_Internet'>معلومات أكثر عن التحديد الجغرافي</a>"
     }
   },
   "device": {
-    "title": "Dispositivo",
+    "title": "جهاز",
     "type": {
-      "mobileAndroid": "Movil Android",
-      "tabletAndroid": "Tablet Android",
-      "ipad": "Ipad",
-      "iphone": "Iphone",
-      "laptopWin": "Portatil Windows",
-      "laptopMac": "Macbook, iMac o Mac Mini",
-      "tv": "Una Tele",
-      "unknownDevice": "Dispositivo desconocido"
+      "mobileAndroid": "جوال أندرويد",
+      "tabletAndroid": "تابلت أندرويد",
+      "ipad": "آيباد",
+      "iphone": "آيفون",
+      "laptopWin": "لابتوب ويندوز",
+      "laptopMac": "ماكبوك، آيماك أو ماك ميني",
+      "tv": "تلفزيون",
+      "unknownDevice": "جهاز غير معروف"
     },
     "modalinfo": {
-      "title": "Dispositivo",
-      "description": "<p>Identificación del tipo de dispositivo desde el que te estás conectando (Movil Android, Tablet Android, Ipad, Iphone, Portatil Windows, Macbook, iMac o Mac Mini, Una Tele u otro tipo).</p>",
+      "title": "جهاز",
+      "description": "<p>تحديد نوع الجهاز الذي تتصل منه (جوال أندرويد، تابلت أندرويد، آيباد، آيفون، لابتوب ويندوز، ماكبوك، آيماك أو ماك ميني، تلفزيون أو نوع آخر)</p>",
       "moreinfo": ""
     }
   },
   "screen": {
-    "title": "Resolución",
+    "title": "دقة العرض",
     "modalinfo": {
-      "title": "Resolución",
-      "description": "<p>La resolución de pantalla es el número de píxeles que puede ser mostrado en la pantalla. Viene dada por el producto del ancho por el alto con el cual se obtiene una relación llamada 'relación de aspecto'. En esta relación de aspecto, se puede encontrar una variación, está de acuerdo a la forma del monitor y de la tarjeta gráfica.</p>",
-      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Resoluci%C3%B3n_de_pantalla'>Más información sobre Resolución de pantalla</a>"
+      "title": "دقة العرض",
+      "description": "<p>دقة العرض أو أوضاع العرض لجهاز تلفزيون رقمي، شاشة كمبيوتر أو جهاز عرض هي عدد البكسلات المميزة في كل بعد يمكن عرضها. يمكن أن تكون مصطلح مبهم خاصةً بما أن دقة العرض المعروضة تتحكم فيها عوامل مختلفة في شاشات أنبوب الأشعة الكاثودية (CRT)، والشاشات المسطحة بما في ذلك شاشات الكريستال السائل وشاشات العرض التي تستخدم مصفوفات ثابتة لعناصر الصورة (بكسل).</p>",
+      "moreinfo": "<a target='_blank' href='https://ar.wikipedia.org/wiki/%D8%AF%D9%82%D8%A9_%D8%A7%D9%84%D8%B9%D8%B1%D8%B6'>المزيد عن دقة العرض</a>"
     }
   },
   "orientation": {
-    "title": "Orientación",
+    "title": "التوجيه",
     "type": {
-      "portrait": "vertical",
-      "landscape": "horizontal",
-      "undefined": "Como estas usando un {0}, no se definirlo"
+      "portrait": "عمودي",
+      "landscape": "أفقي",
+      "undefined": "عذرًا، أنت تستخدم {0}، لا أعرف كيف أحدده"
     },
     "modalinfo": {
-      "title": "Orientación",
-      "description": "<p>Define la orientación de tu dispositivo, siempre que sea un móvil o una tablet</p>",
+      "title": "التوجيه",
+      "description": "<p>تحديد توجيه جهازك، طالما أنه جوال أو تابلت</p>",
       "moreinfo": ""
     }
   },
   "darkmode": {
-    "title": "Modo Oscuro",
+    "title": "الوضع المظلم",
     "type": {
-      "enable": "Modo Oscuro activado",
-      "disable": "Modo Claro activado"
+      "enable": "تمكين الوضع المظلم",
+      "disable": "تمكين الوضع الفاتح"
     },
     "modalinfo": {
-      "title": "El Modo Oscuro",
-      "description": "<p>Este modo permite reducir de forma notable la fatiga visual. Consite en definir el fondo a un tono oscuro (negro o gris).</p>",
-      "moreinfo": "<a target='_blank' href='https://en.wikipedia.org/wiki/Light-on-dark_color_scheme'>Más información sobre el Modo ocuro</a>"
+      "title": "مخطط الألوان الفاتحة على الظلام",
+      "description": "<p>مخطط الألوان الفاتحة على الظلام، يسمى أيضًا بالوضع المظلم، موضوع مظلم أو وضع الليل، هو مخطط ألوان يستخدم نصوصًا وأيقونات بألوان فاتحة وعناصر واجهة المستخدم الرسومية على خلفية داكنة وغالبًا ما يتم مناقشته فيما يتعلق بتصميم واجهة المستخدم للكمبيوتر وتصميم الويب.</p>",
+      "moreinfo": "<a target='_blank' href='https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%B7%D8%B7_%D8%A7%D9%84%D8%A3%D9%84%D9%88%D8%A7%D9%86_%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D8%AD%D8%A9_%D8%B9%D9%84%D9%89_%D8%A7%D9%84%D8%B8%D9%84%D8%A7%D9%85'>المزيد عن الوضع المظلم</a>"
     }
   },
   "lang": {
-    "title": "Idioma",
+    "title": "اللغة",
     "modalinfo": {
-      "title": "Idioma",
-      "description": "<p>El idioma que tienes definido en tu navegador y probablemente en tu dispositivo.</p>",
+      "title": "اللغة",
+      "description": "<p>اللغة التي حددتها في متصفحك وعلى الأرجح في جهازك.</p>",
       "moreinfo": ""
     }
   },
-
   "exit": {
-    "title": "Dejaste la página...",
-    "firsttime": "Es tu primera vez en esta página",
-    "severaltimes": "Visitaste la página...",
+    "title": "لقد غادرت الصفحة...",
+    "firsttime": "هذه هي المرة الأولى التي تغادر فيها الصفحة",
+    "severaltimes": "لقد زرت الصفحة...",
     "modalinfo": {
-      "title": "Analítica Web",
-      "description": "<p>La analítica web es la recopilación, medición, análisis y reporte de datos web con el propósito de comprender y optimizar el uso de la web. Sin embargo, la analítica Web (Web Analytics) no es sólo un proceso para medir el tráfico web, sino que se utiliza como una herramienta para evaluar y mejorar la eficacia de un sitio web.</p>",
-      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Anal%C3%ADtica_web#Concepto'>Más información sobre Analítica Web</a>"
+      "title": "تحليلات الويب",
+      "description": "<p>تحليلات الويب هي قياس وجمع وتحليل وتقديم التقارير عن بيانات الويب بهدف فهم وتحسين استخدام الويب. تحليلات الويب ليست مجرد عملية لقياس حركة المرور على الويب، بل يمكن استخدامها كأداة للأبحاث التجارية والسوقية، ولتقييم وتحسين فعالية موقع ويب.</p>",
+      "moreinfo": "<a target='_blank' href='https://ar.wikipedia.org/wiki/%D8%AA%D8%AD%D9%84%D9%8A%D9%84%D8%A7%D8%AA_%D8%A7%D9%84%D9%88%D9%8A%D8%A8'>المزيد عن تحليلات الويب</a>"
     }
   },
-
   "os": {
-    "title": "Sistema Operativo",
+    "title": "نظام التشغيل",
     "modalinfo": {
-      "title": "El Sistema Operativo",
-      "description": "<p>Un sistema operativo (SO o, frecuentemente, OS —del inglés operating system—) es el software principal o conjunto de programas de un sistema informático que gestiona los recursos de hardware y provee servicios a los programas de aplicación de software, ejecutándose en modo privilegiado respecto de los restantes.</p>",
-      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Sistema_operativo'>Más información sobre Sistema Operativo</a>"
+      "title": "نظام التشغيل",
+      "description": "<p>نظام التشغيل (OS) هو برنامج نظام يدير الأجهزة المادية للكمبيوتر وموارد البرمجيات، ويوفر خدمات مشتركة لبرامج الكمبيوتر.</p>",
+      "moreinfo": "<a target='_blank' href='https://ar.wikipedia.org/wiki/%D9%86%D8%B8%D8%A7%D9%85_%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84'>المزيد عن نظام التشغيل</a>"
     }
   },
   "browser": {
-    "title": "Navegador",
+    "title": "المتصفح",
     "modalinfo": {
-      "title": "Navegador",
-      "description": "<p>Un navegador web (en inglés, web browser) es un software, aplicación o programa que permite el acceso a la Web, interpretando la información de distintos tipos de archivos y sitios web para que estos puedan ser vistos.</p>",
-      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Navegador_web'>Más información sobre Navegador</a>"
+      "title": "المتصفح",
+      "description": "<p>المتصفح الويب (المعروف عادةً بالمتصفح) هو تطبيق برمجي للوصول إلى المعلومات على شبكة الإنترنت العالمية. عندما يطلب المستخدم صفحة ويب من موقع ويب معين، يسترجع المتصفح الويب المحتوى اللازم من خادم الويب ومن ثم يعرض الصفحة على جهاز المستخدم.</p>",
+      "moreinfo": "<a target='_blank' href='https://en.wikipedia.org/wiki/Web_browser'>مزيد من المعلومات حول المتصفح</a>"
     }
   },
   "connection": {
-    "title": "Velocidad de Descargaaa",
+    "title": "سرعة التحميل",
     "type": {
-      "lower2g": "Muy Lenta (2G)",
-      "low2g": "Lenta (2G)",
-      "normal3g": "Normal (3G | WIFI)",
-      "faster4g": "Rápida/Muy Rápida (4G | 5G | WIFI)"
+      "lower2g": "بطيء جدًا (2G)",
+      "low2g": "بطيء (2G)",
+      "normal3g": "عادي (3G | WIFI)",
+      "faster4g": "سريع/أسرع (4G | 5G | WIFI)"
     },
     "modalinfo": {
-      "title": "Velocidad de descarga",
-      "description": "<p>La velocidad de conexión es el promedio de información que se transmite entre dos dispositivos por unidad de tiempo, en un sistema de transmisión. Normalmente las unidades en las que se mide la velocidad de conexión dependen del campo en el que se esté estudiando. En Telecomunicaciones se utiliza la unidad de bits por segundo (bit/s). Es bastante frecuente la utilización de diferentes magnitudes como kbit/s (a veces abreviado 'kbps').</p>",
-      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Velocidad_de_conexi%C3%B3n'>Más información sobre Velocidad de conexión</a>"
+      "title": "سرعة التحميل",
+      "description": "<p>اختبار سرعة المتصفح هو معيار حاسوبي يقيم أداء المتصفح الويب، من خلال قياس كفاءة المتصفح في إكمال قائمة محددة من المهام. بشكل عام، البرمجيات الاختبارية متاحة على الإنترنت، وتقع على موقع ويب، حيث يتم تحميل خوارزميات مختلفة وتنفيذها في عميل المتصفح.</p>",
+      "moreinfo": "<a target='_blank' href='https://en.wikipedia.org/wiki/Browser_speed_test'>مزيد من المعلومات حول اختبار السرعة</a>"
     }
   },
   "telco": {
-    "title": "Compañia de Telefonía",
+    "title": "شركتك للإنترنت",
     "modalinfo": {
-      "title": "Compañia de Telefonía",
-      "description": "<p>Una compañía telefónica, también conocido como telco, proveedor de servicios de telefonía, u operador de telecomunicaciones, es un tipo de proveedor de servicios de comunicaciones (CSP) (más precisamente, un proveedor de servicios de telecomunicaciones o TSP) que proporciona servicios de telecomunicaciones tales como telefonía y acceso a comunicaciones de datos. Muchas compañías telefónicas fueron en un tiempo de las agencias gubernamentales o de propiedad privada, pero regulada por el estado de los monopolios. Las agencias gubernamentales se refieren a menudo, sobre todo en Europa, como PTT (servicios de correo, telégrafo y teléfono).</p>",
-      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_telef%C3%B3nica'>Más información sobre Compañia de Telefonía</a>"
+      "title": "شركتك للإنترنت",
+      "description": "<p>شركة الهاتف، المعروفة أيضًا بمزود خدمة الهاتف أو مشغل الاتصالات، هي نوع من مزودي خدمة الاتصالات (CSP)، وبشكل أدق مزود خدمة الاتصالات السلكية واللاسلكية (TSP)، التي تقدم خدمات الاتصالات مثل الهاتف والوصول إلى بيانات الاتصالات. كانت العديد من شركات الهاتف في وقت من الأوقات وكالات حكومية أو مملوكة خاصة ولكنها كانت احتكارات خاضعة للتنظيم الحكومي. غالبًا ما تُشار إلى الوكالات الحكومية، وخاصة في أوروبا، باسم PTTs (الخدمات البريدية والتلغرافية والهاتفية).</p>",
+      "moreinfo": "<a target='_blank' href='https://en.wikipedia.org/wiki/Telephone_company'>مزيد من المعلومات حول شركة الهاتف</a>"
     }
   },
   "ip": {
     "title": "IP",
     "modalinfo": {
       "title": "IP",
-      "description": "<p>La dirección IP es un conjunto de números que identifica a tu conexión a internet de un dispositivo (computadora, laptop, teléfono inteligente).</p>",
-      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Direcci%C3%B3n_IP'>Más información sobre IP</a>"
+      "description": "<p>عنوان بروتوكول الإنترنت (عنوان IP) هو تسمية رقمية مخصصة لكل جهاز متصل بشبكة الكمبيوتر التي تستخدم بروتوكول الإنترنت للاتصال.[1][2] يقوم عنوان IP بوظيفتين رئيسيتين: التعريف بالمضيف أو واجهة الشبكة وتحديد الموقع.</p>",
+      "moreinfo": "<a target='_blank' href='https://en.wikipedia.org/wiki/IP_address'>مزيد من المعلومات حول عنوان IP</a>"
     }
   },
   "ram": {
-    "title": "Memoria RAM",
+    "title": "ذاكرة RAM",
     "modalinfo": {
-      "title": "Memoria RAM",
-      "description": "<p>La memoria de acceso aleatorio (Random Access Memory, RAM) se utiliza como memoria de trabajo de computadoras y otros dispositivos para el sistema operativo, los programas y la mayor parte del software. En la RAM se cargan todas las instrucciones que ejecuta la unidad central de procesamiento (procesador) y otras unidades del computador, además de contener los datos que manipulan los distintos programas.</p>",
-      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Memoria_de_acceso_aleatorio'>Más información sobre Memoria RAM</a>"
+      "title": "ذاكرة RAM",
+      "description": "<p>جهاز ذاكرة الوصول العشوائي يسمح بقراءة أو كتابة بيانات في نفس الكمية تقريبًا من الوقت بغض النظر عن الموقع الفعلي للبيانات داخل الذاكرة.</p>",
+      "moreinfo": "<a target='_blank' href='https://en.wikipedia.org/wiki/Random-access_memory'>مزيد من المعلومات حول ذاكرة RAM</a>"
     }
   },
   "cpu": {
-    "title": "Microprocesador",
+    "title": "CPU",
     "modalinfo": {
-      "title": "Microprocesador",
-      "description": "<p>El microprocesador (o simplemente procesador) es el circuito integrado central más complejo de un sistema informático; a modo de ilustración, se le suele llamar por analogía el «cerebro» de un ordenador.</p>",
-      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Microprocesador'>Más información sobre Microprocesador</a>"
+      "title": "CPU",
+      "description": "<p>وحدة المعالجة المركزية (CPU)، المعروفة أيضًا باسم المعالج المركزي، المعالج الرئيسي أو المعالج فقط، هي الدارات الإلكترونية داخل الكمبيوتر التي تنفذ التعليمات التي تشكل برنامج الكمبيوتر.</p>",
+      "moreinfo": "<a target='_blank' href='https://en.wikipedia.org/wiki/Central_processing_unit'>مزيد من المعلومات حول CPU</a>"
     }
   },
   "gpu": {
-    "title": "La Tarjeta Gráfica",
+    "title": "GPU",
     "modalinfo": {
-      "title": "La Tarjeta Gráfica",
-      "description": "<p>Una tarjeta gráfica es una tarjeta de expansión de la placa base del ordenador que se encarga de procesar los datos provenientes de la unidad central de procesamiento (CPU) y transformarlos en información comprensible y representable en el dispositivo de salida (por ejemplo: monitor, televisor o proyector). Estas tarjetas utilizan una unidad de procesamiento gráfico o GPU, que muchas veces se usa erróneamente para referirse a la tarjeta gráfica en sí.</p>",
-      "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica'>Más información sobre la tarjeta gráfica</a>"
+      "title": "GPU",
+      "description": "<p>وحدة معالجة الرسومات (GPU) هي دارة إلكترونية متخصصة مصممة للتعامل بسرعة وتغيير الذاكرة لتسريع إنشاء الصور في إطار الذاكرة المؤقتة المعدة للإخراج إلى جهاز عرض. تُستخدم وحدات معالجة الرسومات في الأنظمة المدمجة والهواتف المحمولة وأجهزة الكمبيوتر الشخصية ومحطات العمل وأجهزة ألعاب الفيديو. تعتبر وحدات معالجة الرسومات الحديثة فعالة جدًا في معالجة الرسومات الحاسوبية ومعالجة الصور.</p>",
+      "moreinfo": "<a target='_blank' href='https://en.wikipedia.org/wiki/Graphics_processing_unit'>مزيد من المعلومات حول GPU</a>"
     }
   },
   "battery": {
-    "title": "Batería",
+    "title": "البطارية",
     "type": {
-      "mode": "Modo",
-      "level": "Nivel",
-      "charged": "Cargado",
-      "remaining": "Tiempo restante",
-      "charging": "Cargando..."
+      "mode": "الوضع",
+      "level": "المستوى",
+      "charged": "مشحونة",
+      "remaining": "الوقت المتبقي",
+      "charging": "يشحن..."
     },
     "modalinfo": {
-      "title": "API Batería",
-      "description": "<p>La API de Estado de Batería, también conocida como 'Battery API', provee información acerca del sistema de carga de la batería y permite notificar mediante eventos que son enviados cuando el nivel de la batería cambia. Este puede ser usado para ajustar el uso de recursos por parte de una aplicación y evitar un gasto innecesario de energía cuando la batería esta baja o para guardar cambios en un archivo antes de que la batería se agote y así prevenir perdida de información.</p>",
-      "moreinfo": "<a target='_blank' href='https://developer.mozilla.org/es/docs/WebAPI/Estado_de_Bateria'>Más información sobre API Batería</a>"
+      "title": "واجهة برمجة تطبيقات البطارية",
+      "description": "<p>واجهة برمجة تطبيقات حالة البطارية، المعروفة غالبًا باسم واجهة برمجة تطبيقات البطارية، توفر معلومات حول مستوى شحن بطارية النظام وتتيح لك إمكانية الإخطار بالأحداث التي يتم إرسالها عندما يتغير مستوى البطارية أو حالة الشحن. يمكن استخدام ذلك لضبط استخدام موارد التطبيق الخاص بك لتقليل استنزاف البطارية عندما تكون البطارية منخفضة، أو لحفظ التغييرات قبل نفاذ البطارية لمنع فقدان البيانات.</p>",
+      "moreinfo": "<a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API'>مزيد من المعلومات حول واجهة برمجة تطبيقات البطارية</a>"
     }
   }
 }

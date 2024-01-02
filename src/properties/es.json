@@ -110,7 +110,6 @@
       "moreinfo": ""
     }
   },
-
   "exit": {
     "title": "Dejaste la página...",
     "firsttime": "Es tu primera vez en esta página",
@@ -121,7 +120,6 @@
       "moreinfo": "<a target='_blank' href='https://es.wikipedia.org/wiki/Anal%C3%ADtica_web#Concepto'>Más información sobre Analítica Web</a>"
     }
   },
-
   "os": {
     "title": "Sistema Operativo",
     "modalinfo": {
