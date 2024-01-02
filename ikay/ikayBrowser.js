@@ -171,19 +171,26 @@ function ikayBrowser() {
         (subString) => _userAgent.includes(subString)
       );
       if (isCurrentBrowser) {
-        const { userAgentTerms, ...data } = BROWSER[currentBrowser];
+        const { userAgentTerms,byFeature, ...data } = BROWSER[currentBrowser];
         return data;
       }
     };
     return BROWSER.unknown;
   };
   const getNameByFeature = () => {
-    return null;
+    for (let currentBrowser of _allBrowsersArray) {
+        const isCurrentBrowser = BROWSER[currentBrowser].byFeature;
+        if (isCurrentBrowser) {
+          const { userAgentTerms, byFeature, ...data } = BROWSER[currentBrowser];
+          return data;
+        }
+      };
+      return BROWSER.unknown;
   };
 
   return {
     byUserAgent: getByUserAgent(),
-    byFeature: { name: getNameByFeature() },
+    byFeature: getNameByFeature(),
   };
 }
 export default ikayBrowser;
