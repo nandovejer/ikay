@@ -6,6 +6,7 @@ import ikayPlugins from "./ikay/ikayPlugins.js";
 import ikayRam from "./ikay/ikayRam.js";
 import ikayCPU from "./ikay/ikayCPU.js";
 import ikayOnline from "./ikay/ikayOnline.js";
+import ikayTracking from "./ikay/ikayTracking.js";
 
 
 function domReady() {
@@ -21,8 +22,12 @@ function domReady() {
   console.table(ikayPlugins());
   console.log("** ikayRam ****");
   console.table(ikayRam());
+  console.log("** ikayCPU ****");
+  console.table(ikayCPU());
   console.log("** ikayOnline ****");
   console.table(ikayOnline());
+  console.log("** ikayTracking ****");
+  console.table(ikayTracking());
   
   
 }
