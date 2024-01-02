@@ -125,6 +125,12 @@ const BROWSER = {
     jsEngine: "V8",
     byFeature: null,
   },
+  unknown: {
+    name: "Unknown",
+    renderingEngine: null,
+    jsEngine: null,
+    byFeature: null,
+  },
 };
 
 function ikayBrowser() {
@@ -144,7 +150,7 @@ function ikayBrowser() {
     "ucbrowser",
   ];
 
-  const getNameByUserAgent = () => {
+  const getByUserAgent = () => {
     if (!_userAgent) return;
 
     const chromiumArray = [
@@ -165,17 +171,19 @@ function ikayBrowser() {
         (subString) => _userAgent.includes(subString)
       );
       if (isCurrentBrowser) {
-        return BROWSER[currentBrowser].name;
+        const { userAgentTerms, ...data } = BROWSER[currentBrowser];
+        return data;
       }
-    }
+    };
+    return BROWSER.unknown;
   };
   const getNameByFeature = () => {
     return null;
   };
 
   return {
-    nameByUserAgent: getNameByUserAgent(),
-    getNameByFeature: getNameByFeature(),
+    byUserAgent: getByUserAgent(),
+    byFeature: { name: getNameByFeature() },
   };
 }
 export default ikayBrowser;
