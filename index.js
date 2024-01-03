@@ -10,6 +10,11 @@ import ikayTracking from "./ikay/ikayTracking.js";
 import ikayIsTouchDevice from "./ikay/ikayIsTouchDevice.js";
 import ikayResolution from "./ikay/ikayResolution.js";
 import ikayTime from "./ikay/ikayTime.js";
+import ikaySpeed from "./ikay/ikaySpeed.js";
+import ikayOs from "./ikay/ikayOs.js";
+import ikayParser from "./ikay/ikayParser.js";
+import ikayBattery from "./ikay/ikayBattery.js";
+
 
 
 function domReady() {
@@ -37,7 +42,27 @@ function domReady() {
   console.table(ikayResolution());
   console.log("** ikayTime ****");
   console.table(ikayTime());
-  
-  
+  console.log("** ikayOs ****");
+  console.table(ikayOs());
+
+  // DEPENDENCE
+  console.log("** ikayParser ****");
+  console.table(ikayParser());
+
+  // PROMISES
+  console.log("** ikaySpeed ****");
+  console.table(ikaySpeed());
+  console.log("** ikayBattery ****");
+  ikayBattery(
+    isCharging => console.log(`Is Charging: ${isCharging ? "Yes" : "No"}`),
+    level => console.log(`Battery Level Changed: ${level * 100}%`),
+    chargingTime => console.log(`Time left to charge: ${chargingTime} seconds`),
+    dischargingTime => console.log(`Time left on battery: ${dischargingTime} seconds`)
+  );
+
+
+
+
+
 }
 document.addEventListener("DOMContentLoaded", domReady);
