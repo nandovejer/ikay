@@ -14,10 +14,11 @@ import ikaySpeed from "./ikay/ikaySpeed.js";
 import ikayOs from "./ikay/ikayOs.js";
 import ikayParser from "./ikay/ikayParser.js";
 import ikayBattery from "./ikay/ikayBattery.js";
-
+import ikayByIp from "./ikay/ikayByIp.js";
 
 
 function domReady() {
+  // CLIENT
   console.log("*** ikayBrowser ***");
   console.table(ikayBrowser());
   console.log("** ikayGPU ****");
@@ -45,9 +46,7 @@ function domReady() {
   console.log("** ikayOs ****");
   console.table(ikayOs());
 
-  // DEPENDENCE
-  console.log("** ikayParser ****");
-  console.table(ikayParser());
+
 
   // PROMISES
   console.log("** ikaySpeed ****");
@@ -61,7 +60,19 @@ function domReady() {
   );
 
 
+  // DEPENDENCES
+  console.log("** ikayParser ****");
+  console.table(ikayParser());
+  console.log("** ikayByIp ****");
+  ikayByIp()
+  .then(data => {
+      console.log("Datos de IP:", data);
+  })
+  .catch(error => {
+      console.error("Error al obtener datos de IP:", error);
+  });
 
+  
 
 
 }
