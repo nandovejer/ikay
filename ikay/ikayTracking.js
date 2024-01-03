@@ -1,36 +1,33 @@
+const EVENT_TYPE = {
+    pageEnter: "pageEnter",
+    pageExit: "pageExit",
+    pageClose: "pageClose",
+    pageReload: "pageReload",
+};
+const emptyHistory = {
+    pageEnter: [],
+    pageExit: [],
+    pageClose: [],
+    pageReload: [],
+};
+
 function ikayTracking() {
-    const STATUS = {
-        pageEnter: "PageEnter",
-        pageExit: "PageExit",
-        pageClose: "PageClose",
-        pageReload: "PageReload",
-    };
-    const localHistory = JSON.parse(localStorage.getItem('ikayLocalTracking'));
-    let emptyHistory = {
-        pageEnter: [],
-        pageExit: [],
-        pageClose: [],
-        pageReload: [],
-    };
-
-
+    const localHistory = JSON.parse(localStorage.getItem('ikayLocalTrackingo1'));
     const updateHistory = (eventType) => {
         let history = !localHistory ? emptyHistory : localHistory;
         const time = new Date().toISOString();
         history[eventType].push(time);
         localStorage.setItem('ikayLocalTracking', JSON.stringify(history));
-        
+        // TODO - Promise and callback
         console.log(`Event: ${eventType}, Time: ${time}`);
     }
 
-    document.addEventListener('visibilitychange', () => {
-        document.visibilityState === 'visible' ? updateHistory(STATUS.pageEnter) : updateHistory(STATUS.pageExit);
-    });
+    document.addEventListener('visibilitychange', () =>
+        document.visibilityState === 'visible' ? updateHistory(EVENT_TYPE.pageEnter) : updateHistory(EVENT_TYPE.pageExit)
+    );
 
-    window.addEventListener('beforeunload', () => updateHistory(STATUS.pageClose));
-
-    // Registrar evento de recarga de página
-    updateHistory(STATUS.pageReload);
+    window.addEventListener('beforeunload', () => updateHistory(EVENT_TYPE.pageClose));
+    updateHistory(EVENT_TYPE.pageReload);
 }
 
 export default ikayTracking;

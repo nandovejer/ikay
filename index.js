@@ -7,6 +7,9 @@ import ikayRam from "./ikay/ikayRam.js";
 import ikayCPU from "./ikay/ikayCPU.js";
 import ikayOnline from "./ikay/ikayOnline.js";
 import ikayTracking from "./ikay/ikayTracking.js";
+import ikayIsTouchDevice from "./ikay/ikayIsTouchDevice.js";
+import ikayResolution from "./ikay/ikayResolution.js";
+import ikayTime from "./ikay/ikayTime.js";
 
 
 function domReady() {
@@ -28,6 +31,12 @@ function domReady() {
   console.table(ikayOnline());
   console.log("** ikayTracking ****");
   console.table(ikayTracking());
+  console.log("** ikayIsTouchDevice ****");
+  console.table(ikayIsTouchDevice());
+  console.log("** ikayResolution ****");
+  console.table(ikayResolution());
+  console.log("** ikayTime ****");
+  console.table(ikayTime());
   
   
 }
