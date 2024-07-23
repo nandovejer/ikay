@@ -4,7 +4,7 @@ Hi, I'm Nando Muñoz , IKAY is a tool that you can visualize, identify and manag
 
 ![Repo IKAY image ](src/images/repo.jpg)
 
-DEMO: https://silencespainter.github.io/ikay/
+DEMO: https://nandovejer.github.io/ikay/
 
 ## Commands
 
