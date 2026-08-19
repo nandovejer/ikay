@@ -29,8 +29,8 @@ var speedAPI = {
         showSpeedResults(endTime, startTime);
       };
 
-      download.onerror = function (err, msg) {
-        ShowProgressMessage("Invalid image, or error downloading");
+      download.onerror = function () {
+        console.error("Invalid image, or error downloading:", imageTarget);
       };
 
       startTime = new Date().getTime();

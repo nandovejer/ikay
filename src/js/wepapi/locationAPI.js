@@ -27,8 +27,6 @@ var locationAPI = {
       };
       const updateDomValues = () => {
         Object.keys(selector).forEach((key) => {
-          console.log(key); // returns the keys in an object
-          console.log(selector[key]); // returns the appropriate value
           selector[key].forEach((item) => {
             item.innerHTML = config[key];
           });
@@ -53,7 +51,7 @@ var locationAPI = {
      * Error request of urlAPI
      */
     const errorAPI = function () {
-      console.log("Error APi:", urlAPi);
+      console.error("Error APi:", urlAPi);
       locationAPI.support(false);
     };
 

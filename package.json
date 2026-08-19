@@ -36,8 +36,8 @@
     "node": ">=14.0.0"
   },
   "dependencies": {
-    "@types/ua-parser-js": "0.7.33",
-    "autoprefixer": "9.8.6"
+    "autoprefixer": "9.8.6",
+    "ua-parser-js": "^0.7.37"
   },
   "devDependencies": {
     "@babel/core": "7.11.6",
