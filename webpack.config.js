@@ -15,19 +15,18 @@ const serverConfiguration = {
 };
 
 const path = require("path");
-const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const ImageMinPlugin = require("imagemin-webpack-plugin").default;
 
 let targetServerConfiguration = serverConfiguration.internal;
 
 const config = function (env, args) {
-  if (args.externalServer !== undefined && args.externalServer) {
+  // webpack-cli >= 4 no longer forwards unknown flags, so this arrives as --env externalServer
+  if (env !== undefined && env.externalServer) {
     targetServerConfiguration = serverConfiguration.external;
   }
 
@@ -38,17 +37,27 @@ const config = function (env, args) {
     output: {
       filename: "js/[name].js",
       path: path.resolve(__dirname, "docs"),
+      // replaces clean-webpack-plugin
+      clean: true,
     },
     module: {
       rules: [
         {
           test: /\.scss$/,
           use: [
-            "style-loader",
             MiniCssExtractPlugin.loader,
             "css-loader",
             "postcss-loader",
-            "sass-loader",
+            {
+              loader: "sass-loader",
+              options: {
+                sassOptions: {
+                  // the stylesheets use @import, / for division and the old
+                  // color functions; silence the warnings instead of rewriting them
+                  silenceDeprecations: ["import", "slash-div", "color-functions", "global-builtin"],
+                },
+              },
+            },
           ],
         },
         {
@@ -57,44 +66,32 @@ const config = function (env, args) {
           loader: "babel-loader",
         },
         {
+          // asset modules, built into webpack 5, replacing url-loader
           test: /\.(png|gif|jpg|jpeg)$/,
-          use: [
-            {
-              loader: "url-loader",
-              options: {
-                name: "images/[name].[hash:6].[ext]",
-                publicPath: "../",
-                limit: 8192,
-              },
+          type: "asset",
+          parser: {
+            dataUrlCondition: {
+              maxSize: 8192,
             },
-          ],
+          },
+          generator: {
+            filename: "images/[name].[hash:6][ext]",
+            publicPath: "../",
+          },
         },
         {
           test: /\.(eot|svg|ttf|woff|woff2)$/,
-          use: [
-            {
-              loader: "url-loader",
-              options: {
-                name: "fonts/[name].[hash:6].[ext]",
-                publicPath: "../",
-                limit: 8192,
-              },
+          type: "asset",
+          parser: {
+            dataUrlCondition: {
+              maxSize: 8192,
             },
-          ],
+          },
+          generator: {
+            filename: "fonts/[name].[hash:6][ext]",
+            publicPath: "../",
+          },
         },
-        // {
-        //   test: /\.(svg)$/,
-        //   use: [
-        //     {
-        //       loader: "url-loader",
-        //       options: {
-        //         name: "images/svg/[name].[ext]",
-        //         publicPath: "../",
-        //         limit: false,
-        //       },
-        //     },
-        //   ],
-        // },
       ],
     },
     optimization: {
@@ -102,7 +99,7 @@ const config = function (env, args) {
         new TerserPlugin({
           parallel: true,
         }),
-        new OptimizeCssAssetsPlugin({}),
+        new CssMinimizerPlugin(),
       ],
     },
     watchOptions: {
@@ -135,15 +132,6 @@ const config = function (env, args) {
       }),
       new MiniCssExtractPlugin({
         filename: "css/[name].css",
-      }),
-      new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif)$/i }),
-      new CleanWebpackPlugin({
-        /**
-         * Some plugins used do not correctly save to webpack's asset list.
-         * Disable automatic asset cleaning until resolved
-         */
-        cleanStaleWebpackAssets: false,
-        verbose: true,
       }),
       new CopyWebpackPlugin({
         patterns: [
