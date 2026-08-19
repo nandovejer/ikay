@@ -4,12 +4,12 @@
   "description": "IKAY is a tool that you can visualize, identify and manage your fingerprint. I will show you a dashboard with part of the information that you delive to a website, every time you access by your browser.",
   "homepage": "https://github.com/nandovejer/ikay#readme",
   "scripts": {
-    "build": "webpack --mode=development",
-    "watch": "webpack --mode=development --watch",
-    "watch:externalServer": "webpack --mode=development --watch --externalServer",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack --mode=development",
+    "watch": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack --mode=development --watch",
+    "watch:externalServer": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack --mode=development --watch --externalServer",
     "bundle": "npm ci && npm run watch",
     "bundle:externalServer": "npm ci && npm run watch:externalServer",
-    "production": "cross-env NODE_ENV=production webpack --mode=production",
+    "production": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider webpack --mode=production",
     "lint-sass": "sass-lint -v -q --format=compact",
     "lint-js": "eslint --ext .js src/js/"
   },
