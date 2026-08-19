@@ -1,5 +1,9 @@
 # Browser fingerprint
 
+## Disclaimer
+
+Este repositorio tiene ya cierto tiempo; lo mantengo casi en su estado original porque me gusta ver cómo hemos evolucionado generando código a mano.
+
 Hi, I'm Nando Muñoz , IKAY is a tool that you can visualize, identify and manage your fingerprint. I will show you a dashboard with part of the information that you delive to a website, every time you access by your browser.
 
 ![Repo IKAY image ](src/images/repo.jpg)
@@ -59,3 +63,5 @@ $ npm run lint-sass
 ```sh
 $ npm run lint-js
 ```
+
+
