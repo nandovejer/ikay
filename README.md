@@ -1,8 +1,9 @@
 # Browser fingerprint
 
-## Disclaimer
-
-Este repositorio tiene ya cierto tiempo; lo mantengo casi en su estado original porque me gusta ver cómo hemos evolucionado generando código a mano.
+> [!WARNING]
+> **Esta versión está obsoleta.** Este repositorio tiene ya cierto tiempo; lo mantengo casi en su estado original como recordatorio, porque me gusta ver cómo hemos evolucionado generando código a mano.
+>
+> La versión moderna y optimizada está aquí: https://nandovejer.github.io/ikay-vanilla/
 
 Hi, I'm Nando Muñoz , IKAY is a tool that you can visualize, identify and manage your fingerprint. I will show you a dashboard with part of the information that you delive to a website, every time you access by your browser.
 
